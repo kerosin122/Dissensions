@@ -1,79 +1,69 @@
 ﻿using UnityEngine;
 
-public class PlayerAnimations : MonoBehaviour 
+public class PlayerAnimations : MonoBehaviour
 {
-    private Animator animator;
-    public float moveSpeed;
-    public Transform waypoint;
-    Transform nextWaypoint;
-    Vector2 initialPosition;
-    public float currentTimeOnPath, time;
-    string[] animations;
-    // Use this for initialization
-    void Start () {
-        animator = GetComponent<Animator>();
-        initialPosition = transform.position;
-        moveSpeed = 0.8f;
-        animations = new string[] { "attack", "jump","shoot","dying","run","attack2" };
+    [SerializeField] private Transform _waypoint;
+    [SerializeField] private float _moveSpeed;
+    [SerializeField] private float _currentTimeOnPath, _time;
+
+    private Animator _animator;
+    private string[] _animations;
+    private Vector2 _initialPosition;
+
+    private void Start()
+    {
+        _animator = GetComponent<Animator>();
+
+        _initialPosition = transform.position;
+        _animations = new string[] { "attack", "jump", "shoot", "dying", "run", "attack2" };
     }
-	
-	// Update is called once per frame
-	void Update () {
-        time += Time.deltaTime;
-       
-        if (time < 43)
-        {
-            walk();
-        }
+
+    private void Update()
+    {
+        _time += Time.deltaTime;
+
+        if (_time < 43)
+            Walk();
+
         else
         {
-            if (time >= 53)
+            if (_time >= 53)
             {
-                StartAnimation();
-                animator.Play(animations[Random.Range(0,animations.Length - 1)]);
-                time = 50;
+                _animator.Play(_animations[Random.Range(0, _animations.Length - 1)]);
+                _time = 50;
             }
         }
     }
 
-    public void StartAnimation()
+    private void Look(Vector2 direction)
     {
-
-    }
-
-    private void look(Vector2 direction)
-    {
-        if (direction.x >  transform.position.x) // To the right
-        {
+        if (direction.x > transform.position.x)
             transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
 
-        }
-        else if (direction.x < transform.position.x) // To the left
-        {
+        else if (direction.x < transform.position.x)
             transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
-            
-        }
     }
-    void walk()
+
+    private void Walk()
     {
-        animator.Play("walk");
-        Vector3 startPosition = initialPosition;
-        Vector3 endPosition = waypoint.transform.GetChild(0).transform.position;
-        // 2 
+        _animator.Play("walk");
+
+        Vector3 startPosition = _initialPosition;
+        Vector3 endPosition = _waypoint.transform.GetChild(0).transform.position;
+
         float pathLength = Vector3.Distance(startPosition, endPosition);
-        float totalTimeForPath = pathLength / moveSpeed;
-        //float currentTimeOnPath = Time.time - lastWaypointSwitchTime;
-        currentTimeOnPath += 1 * Time.deltaTime;
-        gameObject.transform.position = Vector3.Lerp(startPosition, endPosition, currentTimeOnPath / totalTimeForPath);
-        // 3 
+        float totalTimeForPath = pathLength / _moveSpeed;
+
+        _currentTimeOnPath += 1 * Time.deltaTime;
+        gameObject.transform.position = Vector3.Lerp(startPosition, endPosition, _currentTimeOnPath / totalTimeForPath);
+
         if (gameObject.transform.position.Equals(endPosition))
         {
-            initialPosition = transform.position;
-            waypoint = waypoint.transform.GetChild(0);
-            currentTimeOnPath = 0;
-            look(waypoint.transform.GetChild(0).position);
+            _initialPosition = transform.position;
+            _waypoint = _waypoint.transform.GetChild(0);
+            _currentTimeOnPath = 0;
 
+            Look(_waypoint.transform.GetChild(0).position);
         }
     }
-
 }
