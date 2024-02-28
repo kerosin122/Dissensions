@@ -1,17 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.ConstrainedExecution;
 using UnityEngine;
 using CharacterStats;
+using System.Collections.Generic;
 
 public class Inventory : MonoBehaviour
-{    public CharacterStater characterStater;
+{ 
+    [SerializeField] private CharacterStater _characterStater;
     [SerializeField] private List<AssetItem> allItems;
     [SerializeField] private List<AssetItem> characterItems;
     [SerializeField] private List<AssetItem> characterInventoryItems;
-    [SerializeField] private inventoryprescent  allItemsPresenter;
-    [SerializeField] private inventoryprescent  characterItemsPresenter;
-    [SerializeField] private inventoryprescent  characterInventoryPresenter;
+    [SerializeField] private inventoryprescent allItemsPresenter;
+    [SerializeField] private inventoryprescent characterItemsPresenter;
+    [SerializeField] private inventoryprescent characterInventoryPresenter;
     [SerializeField] private CharacterStater character;
     [SerializeField] private Transform allItemsContainer;
     [SerializeField] private Transform characterItemsContainer;

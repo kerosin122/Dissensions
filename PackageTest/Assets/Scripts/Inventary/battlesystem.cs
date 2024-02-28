@@ -74,7 +74,7 @@ public class BattleSystems : MonoBehaviour
             {
                 if (_currentCharacter.GetComponent<CharacterStater>().Manevres > 0)
                 {
-                    if (_currentCharacter.GetComponent<CharacterStater>().CharacterTeam == CharacterStater.CharacterTeams.Team1)
+                    if (_currentCharacter.GetComponent<CharacterStater>().CharacterTeam == CharacterTeams.Team1)
                     {
                         _turn = 0;
                     }
@@ -90,7 +90,7 @@ public class BattleSystems : MonoBehaviour
             }
             else
             {
-                if (_currentCharacter.GetComponent<CharacterStater>().CharacterTeam == CharacterStater.CharacterTeams.Team1)
+                if (_currentCharacter.GetComponent<CharacterStater>().CharacterTeam == CharacterTeams.Team1)
                 {
                     _heroes.Remove(_currentCharacter);
                 }
@@ -109,7 +109,7 @@ public class BattleSystems : MonoBehaviour
                 Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 GameObject target = GetClosestCharacter(mousePos, _heroes);
 
-                if (target != null && target.GetComponent<CharacterStater>().CharacterTeam != CharacterStater.CharacterTeams.Team1)
+                if (target != null && target.GetComponent<CharacterStater>().CharacterTeam != CharacterTeams.Team1)
                 {
                     Attack(_currentCharacter, target);
                 }
@@ -157,7 +157,7 @@ public class BattleSystems : MonoBehaviour
 
         target.GetComponent<CharacterStater>().TakeDamage(_currentCharacter.GetComponent<CharacterStater>().damageType, damage);
 
-        if (target.GetComponent<CharacterStater>().CharacterTeam == CharacterStater.CharacterTeams.Team2)
+        if (target.GetComponent<CharacterStater>().CharacterTeam == CharacterTeams.Team2)
         {
             target.GetComponent<CharacterStater>().Manevres -= 1;
         }
@@ -233,7 +233,7 @@ public class BattleSystems : MonoBehaviour
 
         GameObject target = GetClosestCharacters(enemy.transform.position, _heroes);
 
-        if (target != null && target.GetComponent<CharacterStater>().CharacterTeam != CharacterStater.CharacterTeams.Team2)
+        if (target != null && target.GetComponent<CharacterStater>().CharacterTeam != CharacterTeams.Team2)
             Attack(enemy, target);
     }
 
@@ -252,7 +252,7 @@ public class BattleSystems : MonoBehaviour
         {
             float distance = Vector2.Distance(character.transform.position, position);
 
-            if (distance < closestDistance && character.GetComponent<CharacterStater>().CharacterTeam != CharacterStater.CharacterTeams.Team2)
+            if (distance < closestDistance && character.GetComponent<CharacterStater>().CharacterTeam != CharacterTeams.Team2)
             {
                 closestDistance = distance;
                 closestCharacter = character;
