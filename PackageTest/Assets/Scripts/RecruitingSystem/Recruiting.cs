@@ -1,5 +1,4 @@
 using UnityEngine;
-using CharacterStats;
 
 public class Recruiting : MonoBehaviour
 {

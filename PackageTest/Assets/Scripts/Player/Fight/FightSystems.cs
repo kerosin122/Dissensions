@@ -1,11 +1,10 @@
 using UnityEngine;
-using CharacterStats;
 using System.Collections.Generic;
 
 public class FightSystems : MonoBehaviour
 {
     [SerializeField] private List<GameObject> _heroes;
-    [SerializeField] private EnCollisionDetector _enCollisionDetector;
+    [SerializeField] private PlayerRPG _enCollisionDetector;
     [SerializeField] private List<GameObject> _enemies;
     [SerializeField] private CharacterStater _characterStater;
     [SerializeField] private GameObject _currentCharacter;
@@ -78,11 +77,13 @@ public class FightSystems : MonoBehaviour
                     {
                         _turn = 0;
                     }
+
                     else
                     {
                         _turn = 1;
                     }
                 }
+
                 else
                 {
                     _turn = 1;
@@ -146,7 +147,7 @@ public class FightSystems : MonoBehaviour
             return;
         }
 
-        if (attacker.GetComponent<CharacterStater>().characterID == target.GetComponent<CharacterStater>().characterID)
+        if (attacker.GetComponent<CharacterStater>().CharacterId == target.GetComponent<CharacterStater>().CharacterId)
         {
             return;
         }
@@ -191,18 +192,16 @@ public class FightSystems : MonoBehaviour
                     GameObject characterWithHighestInitiative = _enemies[0];
                     for (int i = 1; i < _enemies.Count; i++)
                     {
+                        CharacterStater stats = _enemies[i].GetComponent<CharacterStater>();
+
+                        if (stats.Initiative > highestInitiative)
                         {
-                            CharacterStater stats = _enemies[i].GetComponent<CharacterStater>();
-
-                            if (stats.Initiative > highestInitiative)
-                            {
-                                highestInitiative = stats.Initiative;
-                                characterWithHighestInitiative = _enemies[i];
-                            }
-
-                            _currentCharacter = characterWithHighestInitiative;
-                            _turn = 1;
+                            highestInitiative = stats.Initiative;
+                            characterWithHighestInitiative = _enemies[i];
                         }
+
+                        _currentCharacter = characterWithHighestInitiative;
+                        _turn = 1;
                     }
                 }
             }

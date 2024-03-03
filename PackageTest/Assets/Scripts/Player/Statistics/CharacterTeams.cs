@@ -1,8 +1,5 @@
-﻿namespace CharacterStats
+﻿public enum CharacterTeams
 {
-    public enum CharacterTeams
-    {
-        Team1,
-        Team2
-    }
+    Team1,
+    Team2
 }

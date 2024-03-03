@@ -1,5 +1,4 @@
 using UnityEngine;
-using CharacterStats;
 using System.Collections.Generic;
 
 public class Inventory : MonoBehaviour
@@ -25,7 +24,7 @@ public class Inventory : MonoBehaviour
 
     public void RenderAllItems(List<AssetItem> items)
     {
-        foreach (Transform child in allItemsContainer)
+        foreach (Transform child in allItemsContainer)  
         {
             Destroy(child.gameObject);
         }
@@ -44,7 +43,7 @@ public class Inventory : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        items.ForEach(item =>
+        items.ForEach(item =>   
         {
             var cell = Instantiate(characterItemsPresenter, characterItemsContainer);
             cell.Render(item);

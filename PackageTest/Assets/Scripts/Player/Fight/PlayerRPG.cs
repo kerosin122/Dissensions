@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnCollisionDetector : MonoBehaviour
+public class PlayerRPG : MonoBehaviour
 {
     [SerializeField] private GameObject _panel;
 
