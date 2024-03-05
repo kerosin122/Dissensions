@@ -1,7 +1,7 @@
-using UnityEngine;
+//using UnityEngine;
 
-public interface Items
-{
-    public string Name { get; }
-    public Sprite Icon { get; }
-}
+//public interface Items
+//{
+//    public string Name { get; }
+//    public Sprite Icon { get; }
+//}
