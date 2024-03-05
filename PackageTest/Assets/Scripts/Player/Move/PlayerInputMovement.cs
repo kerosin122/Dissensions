@@ -1,14 +1,13 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
 namespace ScriptsPlayer
 {
-    [RequireComponent(typeof(PlayerMovement))]
     public class PlayerInputMovement : MonoBehaviour
     {
-        private PlayerMovement _playerMovement;
+        public UnityEvent OnMoving = new();
 
-        private void Start() => _playerMovement = GetComponent<PlayerMovement>();
         private void Update() => InputMove();
 
         private void InputMove()
@@ -18,8 +17,7 @@ namespace ScriptsPlayer
                 if (EventSystem.current.IsPointerOverGameObject())
                     return;
 
-                _playerMovement.IsMoving = true;
-                _playerMovement.TargetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                OnMoving?.Invoke();
             }
         }
     }

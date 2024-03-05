@@ -3,9 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class PauseGame : MonoBehaviour
 {
-    private const float PauseTimeScale = 0f;
-    private const float ResumeTimeScale = 1f;
-
     [SerializeField] private GameObject _pausePanel;
 
     private bool _isPaused = false;
@@ -15,18 +12,18 @@ public class PauseGame : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (!_isPaused)
-                IsOpenPanelPause(PauseTimeScale, true);
+                IsOpenPanelPause(true);
 
             else
-                IsOpenPanelPause(ResumeTimeScale, false);
+                IsOpenPanelPause(false);
         }
 
         IsExitGame();
     }
 
-    private void IsOpenPanelPause(float stopTime, bool isActivePanel)
+    private void IsOpenPanelPause(bool isActivePanel)
     {
-        Time.timeScale = stopTime;
+        Time.timeScale = isActivePanel ? 1 : 0;
         _isPaused = isActivePanel;
         _pausePanel.SetActive(isActivePanel);
     }
