@@ -1,102 +1,41 @@
-//using UnityEngine;
-//using System.Collections.Generic;
+﻿using UnityEngine;
+using System.Collections.Generic;
 
-//public class Inventory : MonoBehaviour
-//{ 
-//    [SerializeField] private CharacterStater _characterStater;
-//    [SerializeField] private List<AssetItem> allItems;
-//    [SerializeField] private List<AssetItem> characterItems;
-//    [SerializeField] private List<AssetItem> characterInventoryItems;
-//    [SerializeField] private InventoryPresent allItemsPresenter;
-//    [SerializeField] private InventoryPresent characterItemsPresenter;
-//    [SerializeField] private InventoryPresent characterInventoryPresenter;
-//    [SerializeField] private CharacterStater character;
-//    [SerializeField] private Transform allItemsContainer;
-//    [SerializeField] private Transform characterItemsContainer;
-//    [SerializeField] private Transform characterInventoryContainer;
+namespace ScriptsInventory
+{
+    public class Inventory : MonoBehaviour
+    {
+        [SerializeField] private GameObject _inventoryPanel;
+        [SerializeField] private Transform _inventoryTransform;
+        [SerializeField] private List<InventorySlot> _slots = new List<InventorySlot>();
 
-//    public void OnEnable()
-//    {
-//        RenderAllItems(allItems);
-//        RenderCharacterItems(characterItems);
-//        RenderCharacterInventoryItems(characterInventoryItems);
-//    }
+        private bool _isOpenPanel;
 
-//    public void RenderAllItems(List<AssetItem> items)
-//    {
-//        foreach (Transform child in allItemsContainer)  
-//        {
-//            Destroy(child.gameObject);
-//        }
+        private void Start()
+        {
+            for (int index = 0; index < _inventoryTransform.childCount; index++)
+            {
+                if (_inventoryTransform.GetChild(index).GetComponent<InventorySlot>() != null)
+                    _slots.Add(_inventoryTransform.GetChild(index).GetComponent<InventorySlot>());
+            }
+        }
 
-//        items.ForEach(item =>
-//        {
-//            var cell = Instantiate(allItemsPresenter, allItemsContainer);
-//            cell.Render(item);
-//        });
-//    }
+        private void Update() => OpenOrClosePanel();
 
-//    public void RenderCharacterItems(List<AssetItem> items)
-//    {
-//        foreach (Transform child in characterItemsContainer)
-//        {
-//            Destroy(child.gameObject);
-//        }
+        private void OpenOrClosePanel()
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                _isOpenPanel = !_isOpenPanel;
 
-//        items.ForEach(item =>   
-//        {
-//            var cell = Instantiate(characterItemsPresenter, characterItemsContainer);
-//            cell.Render(item);
-//        });
-//    }
+                if (_isOpenPanel)
+                    _inventoryPanel.SetActive(true);
 
-//    public void RenderCharacterInventoryItems(List<AssetItem> items)
-//    {
-//        foreach (Transform child in characterInventoryContainer)
-//        {
-//            Destroy(child.gameObject);
-//        }
+                else
+                    _inventoryPanel.SetActive(false);
+            }
+        }
 
-//        items.ForEach(item =>
-//        {
-//            var cell = Instantiate(characterInventoryPresenter, characterInventoryContainer);
-//            cell.Render(item);
-//        });
-//    }
-
-//    public void AddItemToAllItems(AssetItem item)
-//    {
-//        allItems.Add(item);
-//        RenderAllItems(allItems);
-//    }
-
-//    public void AddItemToCharacterItems(AssetItem item)
-//    {
-//        characterItems.Add(item);
-//        RenderCharacterItems(characterItems);
-//    }
-
-//    public void AddItemToCharacterInventory(AssetItem item)
-//    {
-//        characterInventoryItems.Add(item);
-//        RenderCharacterInventoryItems(characterInventoryItems);
-//    }
-
-//    public void RemoveItemFromAllItems(AssetItem item)
-//    {
-//        allItems.Remove(item);
-//        RenderAllItems(allItems);
-//    }
-
-//    public void RemoveItemFromCharacterItems(AssetItem item)
-//    {
-//        characterItems.Remove(item);
-//        RenderCharacterItems(characterItems);
-//    }
-
-//    public void RemoveItemFromCharacterInventory(AssetItem item)
-//    {
-//        characterInventoryItems.Remove(item);
-//        RenderCharacterInventoryItems(characterInventoryItems);
-//    }
-//}
+        public void ClosePanelButton() => _inventoryPanel.SetActive(false);
+    }
+}

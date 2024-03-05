@@ -23,7 +23,7 @@ public class PauseGame : MonoBehaviour
 
     private void IsOpenPanelPause(bool isActivePanel)
     {
-        Time.timeScale = isActivePanel ? 1 : 0;
+        Time.timeScale = isActivePanel ? 0f : 1f;
         _isPaused = isActivePanel;
         _pausePanel.SetActive(isActivePanel);
     }

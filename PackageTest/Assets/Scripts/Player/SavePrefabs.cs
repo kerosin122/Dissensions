@@ -5,8 +5,8 @@ using System.Xml.Serialization;
 
 public class SavePrefabs : MonoBehaviour
 {
-    [SerializeField] private Slider _firstSlider;
-    [SerializeField] private Slider _secondSlider;
+    [SerializeField] private Slider _soundSlider;
+    [SerializeField] private Slider _musicSlider;
 
     private string _filePath;
 
@@ -34,8 +34,8 @@ public class SavePrefabs : MonoBehaviour
     {
         SliderData data = new SliderData();
 
-        data.Slider1Value = _firstSlider.value;
-        data.Slider2Value = _secondSlider.value;
+        data.Slider1Value = _soundSlider.value;
+        data.Slider2Value = _musicSlider.value;
 
         XmlSerializer serializer = new XmlSerializer(typeof(SliderData));
 
@@ -54,8 +54,8 @@ public class SavePrefabs : MonoBehaviour
             using (FileStream stream = new FileStream(_filePath, FileMode.Open))
             {
                 SliderData data = (SliderData)serializer.Deserialize(stream);
-                _firstSlider.value = data.Slider1Value;
-                _secondSlider.value = data.Slider2Value;
+                _soundSlider.value = data.Slider1Value;
+                _musicSlider.value = data.Slider2Value;
             }
         }
     }
