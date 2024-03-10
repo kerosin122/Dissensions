@@ -14,10 +14,7 @@ namespace ScriptsPlayer
         private bool _isMoving;
         private Vector3 _targetPosition;
 
-        private void OnValidate()
-        {
-            _inputMovement = GetComponent<PlayerInputMovement>();
-        }
+        private void OnValidate() => _inputMovement = GetComponent<PlayerInputMovement>();
 
         private void Start()
         {
@@ -37,11 +34,14 @@ namespace ScriptsPlayer
         {
             var diffPosition = transform.position - _targetPosition;
 
-            if (_isMoving && (diffPosition.x > 0.01f || diffPosition.y > 0.01f))
+            if (_isMoving && (Mathf.Abs(diffPosition.x)  > 0.01f || Mathf.Abs(diffPosition.y) > 0.01f))
                 transform.position = Vector2.MoveTowards(transform.position, _targetPosition, _speedWalking * Time.deltaTime);
 
             else
+            {
+                Debug.Log("»дти не могу");
                 _isMoving = false;
+            }
         }
 
         private void Rotation()

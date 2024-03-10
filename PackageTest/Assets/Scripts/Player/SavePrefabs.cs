@@ -24,12 +24,6 @@ public class SavePrefabs : MonoBehaviour
     private void OnEnable() => LoadSliders();
     private void OnDisable() => SaveSliders();
 
-    private void SaveAndLoadPrefabs()
-    {
-        SaveSliders();
-        LoadSliders();
-    }
-
     private void SaveSliders()
     {
         SliderData data = new SliderData();

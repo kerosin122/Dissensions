@@ -316,6 +316,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 861a0db671742764e81739ad3c90f82a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _soundSlider: {fileID: 1140795595}
+  _musicSlider: {fileID: 1026358861}
 --- !u!114 &86398823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,7 +377,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 86398823}
         m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
-        m_MethodName: SwitchScene
+        m_MethodName: SwitchGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -468,11 +470,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f0feb01cc3074e47baa3798c65ed4bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 24100000, guid: dd385ebef26ec9c4dad45d9ef8361e87, type: 2}
-  slidermusic: {fileID: 1026358861}
-  slidersound: {fileID: 1140795595}
-  music: {fileID: -4702910692529705169, guid: dd385ebef26ec9c4dad45d9ef8361e87, type: 2}
-  sound: {fileID: 2830034824013893053, guid: dd385ebef26ec9c4dad45d9ef8361e87, type: 2}
+  _audioMixer: {fileID: 24100000, guid: dd385ebef26ec9c4dad45d9ef8361e87, type: 2}
+  _musicSlider: {fileID: 1026358861}
+  _soundSlider: {fileID: 1140795595}
+  _musicMixer: {fileID: -4702910692529705169, guid: dd385ebef26ec9c4dad45d9ef8361e87,
+    type: 2}
+  _soundsMixer: {fileID: 2830034824013893053, guid: dd385ebef26ec9c4dad45d9ef8361e87,
+    type: 2}
 --- !u!4 &141986540
 Transform:
   m_ObjectHideFlags: 0
@@ -709,7 +713,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 339859139}
         m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
-        m_MethodName: SwitchScene
+        m_MethodName: SwitchGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -782,6 +786,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 861a0db671742764e81739ad3c90f82a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _soundSlider: {fileID: 1140795595}
+  _musicSlider: {fileID: 1026358861}
 --- !u!114 &339859141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2222,7 +2228,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d98277a28b4445741a0a78367d365f6d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 14ad2b6de067c0c45a8eb61df8b1c2fc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2477,9 +2483,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 161888129793313011, guid: 1605d5ad254ed734383211cfeaec2493,
         type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 161888129793313011, guid: 1605d5ad254ed734383211cfeaec2493,
+        type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 141986539}
+    - target: {fileID: 161888129793313011, guid: 1605d5ad254ed734383211cfeaec2493,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeSoundVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 161888129793313011, guid: 1605d5ad254ed734383211cfeaec2493,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ScriptsAudio.VolumeSetter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1141135261625943311, guid: 1605d5ad254ed734383211cfeaec2493,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2726,18 +2747,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5634351029645545834, guid: 7fb1d64d4c580114e894610fa9b24357,
         type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5634351029645545834, guid: 7fb1d64d4c580114e894610fa9b24357,
+        type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 141986539}
     - target: {fileID: 5634351029645545834, guid: 7fb1d64d4c580114e894610fa9b24357,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetMusicVolume
+      value: ChangeMusicVolume
       objectReference: {fileID: 0}
     - target: {fileID: 5634351029645545834, guid: 7fb1d64d4c580114e894610fa9b24357,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: AudioManager, Assembly-CSharp
+      value: ScriptsAudio.VolumeSetter, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5634351029645545834, guid: 7fb1d64d4c580114e894610fa9b24357,
         type: 3}

@@ -8,9 +8,9 @@ namespace ScriptsPlayer
     {
         public UnityEvent OnMoving = new();
 
-        private void Update() => InputMove();
+        private void Update() => InputMovement();
 
-        private void InputMove()
+        private void InputMovement()
         {
             if (Input.GetMouseButtonDown(0))
             {

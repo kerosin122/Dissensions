@@ -24,6 +24,7 @@ namespace ScriptsPlayer
         }
 
         private void Update() => SetPlayerAnimation();
+
         private void SetPlayerAnimation() => _animator.SetBool(Walk, _movement.IsMoving);
     }
 }
