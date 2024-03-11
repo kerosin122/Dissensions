@@ -58,7 +58,8 @@ namespace ScriptsPlayer
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            collision.gameObject.SetActive(false);
+            if (collision.gameObject.TryGetComponent(out Apple apple))
+                collision.gameObject.SetActive(false);
         }
     }
 }
