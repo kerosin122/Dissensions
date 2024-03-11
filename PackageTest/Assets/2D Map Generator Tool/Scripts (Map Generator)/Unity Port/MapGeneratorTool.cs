@@ -29,9 +29,9 @@ namespace MapGenerator.UnityPort
         {
             if (generateOnStart)
             {
-                if(generateRandomSeed)
+                if (generateRandomSeed)
                     RandomSeed();
-                
+
                 TryGenerate();
             }
         }
@@ -44,9 +44,7 @@ namespace MapGenerator.UnityPort
         public void Clear()
         {
             for (int i = transform.childCount - 1; i >= 0; --i)
-            {
                 DestroyImmediate(transform.GetChild(i).gameObject);
-            }
 
             Map = null;
         }
@@ -54,15 +52,15 @@ namespace MapGenerator.UnityPort
         public void TryGenerate()
         {
             IEnumerable<ValidationError> errors = Validate();
-            if(errors.Any())
+
+            if (errors.Any())
             {
-                foreach(var error in errors)
+                foreach (var error in errors)
                     Debug.LogWarning(error);
             }
+
             else
-            {
                 Generate();
-            }
         }
 
         private void Generate()
@@ -82,7 +80,7 @@ namespace MapGenerator.UnityPort
 
             ObjectsGenerator objectsGenerator = new ObjectsGenerator(spaceOrientation);
             objectsGenerator.Render(transform, generator.AwaitingObjects);
-        }  
+        }
 
         public IEnumerable<ValidationError> Validate()
         {

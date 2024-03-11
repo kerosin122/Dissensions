@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54a9361619325944e8cd0bc94666d2cb, type: 3}
   m_Name: Tundra
   m_EditorClassIdentifier: 
-  ground: {fileID: 21300000, guid: 6f6aeab83055e3444ac6eb8cbb51540e, type: 3}
+  ground: {fileID: 21300000, guid: bee353be4dd7e60458fed37f8656f65a, type: 3}
   treesIntensity: 1
   trees:
   - priority: 10
