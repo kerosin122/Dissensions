@@ -8,17 +8,17 @@ public class CharacterStater : MonoBehaviour
 
     [Header("Standard Stats")]
     [SerializeField] private int level = 1;
-    public int Hits;
-    public int mana;
+    public int _hits;
+    public int _mana;
 
     public CharacterTeams CharacterTeam;
 
-    public DamageType damageType;
-    public bool range;
-    public int Attack;
-    public int DefenceBlow;
+    public DamageType _damageType;
+    public bool _range;
+    public int _attack;
+    public int _defenceBlow;
 
-    public int DefenceShot;
+    public int _defenceShot;
     public int ProtectM;
 
     public int Initiative;
@@ -68,11 +68,11 @@ public class CharacterStater : MonoBehaviour
 
     private void Start()
     {
-        currentHealth = Hits + HitsModifier;
-        currentAttack = Attack + AttackModifier;
-        currentDefenceBlow = DefenceBlow + DefenceBlowModifier;
+        currentHealth = _hits + HitsModifier;
+        currentAttack = _attack + AttackModifier;
+        currentDefenceBlow = _defenceBlow + DefenceBlowModifier;
         _characterID = gameObject.GetInstanceID();
-        currentDefenceShot = DefenceShot + DefenceShotModifier;
+        currentDefenceShot = _defenceShot + DefenceShotModifier;
         currentProtectM = ProtectM + ProtectMModifir;
         currentManevres = Manevres + ManevresModifier;
         currentuklon = uklon + uklonModifier;
@@ -80,7 +80,7 @@ public class CharacterStater : MonoBehaviour
         currentregen = regen + regenModifier;
         currentvampiric = vampiric + vampiricModifier;
         currentIniative = Initiative + InitiativeModifier;
-        currentMana = mana + manaModifier;
+        currentMana = _mana + manaModifier;
     }
 
     public void TakeDamage(DamageType damageType, int damage)
@@ -123,7 +123,7 @@ public class CharacterStater : MonoBehaviour
     private void Heal(int healAmount)
     {
         currentHealth += healAmount;
-        currentHealth = Mathf.Min(currentHealth, Hits + HitsModifier);
+        currentHealth = Mathf.Min(currentHealth, _hits + HitsModifier);
     }
 
     private void Die()
@@ -143,20 +143,20 @@ public class CharacterStater : MonoBehaviour
         switch (level)
         {
             case 2:
-                Hits += 5;
+                _hits += 5;
                 break;
             case 3:
-                mana += 10;
+                _mana += 10;
                 break;
             case 4:
-                Attack += 3;
+                _attack += 3;
                 break;
             case 5:
-                DefenceBlow += 3;
+                _defenceBlow += 3;
                 break;
 
             case 8:
-                DefenceShot += 3;
+                _defenceShot += 3;
                 break;
             case 9:
                 ProtectM += 3;
@@ -183,12 +183,12 @@ public class CharacterStater : MonoBehaviour
                 break;
         }
 
-        currentHealth = Hits + HitsModifier;
-        currentMana = mana + manaModifier;
-        currentAttack = Attack + AttackModifier;
-        currentDefenceBlow = DefenceBlow + DefenceBlowModifier;
+        currentHealth = _hits + HitsModifier;
+        currentMana = _mana + manaModifier;
+        currentAttack = _attack + AttackModifier;
+        currentDefenceBlow = _defenceBlow + DefenceBlowModifier;
 
-        currentDefenceShot = DefenceShot + DefenceShotModifier;
+        currentDefenceShot = _defenceShot + DefenceShotModifier;
         currentProtectM = ProtectM + ProtectMModifir;
         currentIniative = Initiative + InitiativeModifier;
         currentManevres = Manevres + ManevresModifier;
@@ -207,20 +207,20 @@ public class CharacterStater : MonoBehaviour
             switch (statName)
             {
                 case "Hits":
-                    Hits += amount;
+                    _hits += amount;
                     break;
                 case "Mana":
-                    mana += amount;
+                    _mana += amount;
                     break;
                 case "Attack":
-                    Attack += amount;
+                    _attack += amount;
                     break;
                 case "DefenceBlow":
-                    DefenceBlow += amount;
+                    _defenceBlow += amount;
                     break;
 
                 case "DefenceShot":
-                    DefenceShot += amount;
+                    _defenceShot += amount;
                     break;
                 case "ProtectM":
                     ProtectM += amount;
@@ -251,20 +251,20 @@ public class CharacterStater : MonoBehaviour
             switch (statName)
             {
                 case "Hits":
-                    currentHealth = Hits + HitsModifier;
+                    currentHealth = _hits + HitsModifier;
                     break;
                 case "Mana":
-                    currentMana = mana + manaModifier;
+                    currentMana = _mana + manaModifier;
                     break;
                 case "AttackBlow":
-                    currentAttack = Attack + AttackModifier;
+                    currentAttack = _attack + AttackModifier;
                     break;
                 case "DefenceBlow":
-                    currentDefenceBlow = DefenceBlow + DefenceBlowModifier;
+                    currentDefenceBlow = _defenceBlow + DefenceBlowModifier;
                     break;
 
                 case "DefenceShot":
-                    currentDefenceShot = DefenceShot + DefenceShotModifier;
+                    currentDefenceShot = _defenceShot + DefenceShotModifier;
                     break;
                 case "ProtectM":
                     currentProtectM = ProtectM + ProtectMModifir;
@@ -301,12 +301,12 @@ public class CharacterStater : MonoBehaviour
 
     private void OnValidate()
     {
-        currentHealth = Hits + HitsModifier;
-        currentMana = mana + manaModifier;
-        currentAttack = Attack + AttackModifier;
-        currentDefenceBlow = DefenceBlow + DefenceBlowModifier;
+        currentHealth = _hits + HitsModifier;
+        currentMana = _mana + manaModifier;
+        currentAttack = _attack + AttackModifier;
+        currentDefenceBlow = _defenceBlow + DefenceBlowModifier;
 
-        currentDefenceShot = DefenceShot + DefenceShotModifier;
+        currentDefenceShot = _defenceShot + DefenceShotModifier;
         currentProtectM = ProtectM + ProtectMModifir;
         currentIniative = Initiative + InitiativeModifier;
         currentManevres = Manevres + ManevresModifier;

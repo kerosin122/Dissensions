@@ -154,9 +154,9 @@ public class FightSystems : MonoBehaviour
 
         attacker.GetComponent<CharacterStater>().Manevres -= 1;
 
-        int damage = attacker.GetComponent<CharacterStater>().Attack;
+        int damage = attacker.GetComponent<CharacterStater>()._attack;
 
-        target.GetComponent<CharacterStater>().TakeDamage(_currentCharacter.GetComponent<CharacterStater>().damageType, damage);
+        target.GetComponent<CharacterStater>().TakeDamage(_currentCharacter.GetComponent<CharacterStater>()._damageType, damage);
 
         if (target.GetComponent<CharacterStater>().CharacterTeam == CharacterTeams.Team2)
         {
