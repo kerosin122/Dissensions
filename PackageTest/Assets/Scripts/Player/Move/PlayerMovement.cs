@@ -43,7 +43,7 @@ namespace ScriptsPlayer
 
         private void Rotation()
         {
-            Vector3 direction = (_targetPosition - transform.position).normalized;
+            Vector2 direction = (_targetPosition - transform.position).normalized;
 
             transform.eulerAngles = direction.x < 0f
                 ? new Vector2(0f, 180f)

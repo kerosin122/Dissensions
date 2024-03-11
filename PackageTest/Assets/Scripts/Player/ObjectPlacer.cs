@@ -4,7 +4,7 @@ namespace ScriptsPlayer
 {
     public class ObjectPlacer : MonoBehaviour
     {
-        private Transform _objectPrefab;
+        [SerializeField] private Transform _objectPrefab;
 
         private Vector2 _areaSize;
         private Vector2 _spawnAreaMin;
@@ -23,7 +23,7 @@ namespace ScriptsPlayer
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.F))
                 PlaceObject();
         }
 
@@ -37,7 +37,7 @@ namespace ScriptsPlayer
             Instantiate(_objectPrefab, randomPosition, Quaternion.identity);
         }
 
-        public void OnDrawosSelected()
+        private void OnDrawSelected()
         {
             Gizmos.color = Color.green;
             Gizmos.DrawWireCube(transform.position, new Vector3(_areaSize.x, _areaSize.y, 0));
@@ -49,20 +49,4 @@ namespace ScriptsPlayer
             Gizmos.DrawWireCube(spawnAreaCenter, spawnAreaSize);
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
