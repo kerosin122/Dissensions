@@ -11,21 +11,26 @@ public class ObjectPlacer : MonoBehaviour
     public int minPrefabCount;
     public int maxPrefabCount;
 
-    private void Start()
+
+
+    /// <summary>
+    /// ///////
+    /// </summary>
+
+
+
+    public void Start()
     {
         int randomCount = Random.Range(minPrefabCount, maxPrefabCount + 1);
+
         for (int i = 0; i < randomCount; i++)
-        {
             PlaceObject();
-        }
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
-        {
             PlaceObject();
-        }
     }
 
     private void PlaceObject()
@@ -36,7 +41,7 @@ public class ObjectPlacer : MonoBehaviour
         Instantiate(objectPrefab, randomPosition, Quaternion.identity);
     }
 
-    private void OnDrawGizmosSelected()
+    public void OnDrawosSelected()
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireCube(transform.position, new Vector3(areaSize.x, areaSize.y, 0));
@@ -46,4 +51,18 @@ public class ObjectPlacer : MonoBehaviour
         Vector3 spawnAreaSize = new Vector3(spawnAreaMax.x - spawnAreaMin.x, spawnAreaMax.y - spawnAreaMin.y, 0);
         Gizmos.DrawWireCube(spawnAreaCenter, spawnAreaSize);
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

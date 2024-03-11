@@ -34,14 +34,11 @@ namespace ScriptsPlayer
         {
             var diffPosition = transform.position - _targetPosition;
 
-            if (_isMoving && (Mathf.Abs(diffPosition.x)  > 0.01f || Mathf.Abs(diffPosition.y) > 0.01f))
+            if (_isMoving && (Mathf.Abs(diffPosition.x) > 0.01f || Mathf.Abs(diffPosition.y) > 0.01f))
                 transform.position = Vector2.MoveTowards(transform.position, _targetPosition, _speedWalking * Time.deltaTime);
 
             else
-            {
-                Debug.Log("»дти не могу");
                 _isMoving = false;
-            }
         }
 
         private void Rotation()
