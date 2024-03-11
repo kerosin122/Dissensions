@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 
 namespace ScriptsPlayer
@@ -58,7 +59,7 @@ namespace ScriptsPlayer
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            collision.gameObject.SetActive(false);
+            Items._item.PickUpFood(collision.gameObject);
         }
     }
 }
