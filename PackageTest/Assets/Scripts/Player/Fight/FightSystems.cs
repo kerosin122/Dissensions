@@ -32,7 +32,7 @@ public class FightSystems : MonoBehaviour
 
     private void Update()
     {
-        if (_currentCharacter.GetComponent<CharacterStater>().Manevres <= 0)
+        if (_currentCharacter.GetComponent<CharacterStater>()._manevres <= 0)
             _turn = 1;
 
         if (_heroes.Count == 0 && _enemies.Count == 0)
@@ -71,7 +71,7 @@ public class FightSystems : MonoBehaviour
 
             if (_currentCharacter.GetComponent<CharacterStater>().currentHealth > 0)
             {
-                if (_currentCharacter.GetComponent<CharacterStater>().Manevres > 0)
+                if (_currentCharacter.GetComponent<CharacterStater>()._manevres > 0)
                 {
                     if (_currentCharacter.GetComponent<CharacterStater>().CharacterTeam == CharacterTeams.Team1)
                     {
@@ -116,7 +116,7 @@ public class FightSystems : MonoBehaviour
                 }
             }
 
-            if (_currentCharacter.GetComponent<CharacterStater>().Manevres <= 0)
+            if (_currentCharacter.GetComponent<CharacterStater>()._manevres <= 0)
             {
                 _turn = 1;
             }
@@ -152,7 +152,7 @@ public class FightSystems : MonoBehaviour
             return;
         }
 
-        attacker.GetComponent<CharacterStater>().Manevres -= 1;
+        attacker.GetComponent<CharacterStater>()._manevres -= 1;
 
         int damage = attacker.GetComponent<CharacterStater>()._attack;
 
@@ -160,10 +160,10 @@ public class FightSystems : MonoBehaviour
 
         if (target.GetComponent<CharacterStater>().CharacterTeam == CharacterTeams.Team2)
         {
-            target.GetComponent<CharacterStater>().Manevres -= 1;
+            target.GetComponent<CharacterStater>()._manevres -= 1;
         }
 
-        if (attacker.GetComponent<CharacterStater>().Manevres <= 0)
+        if (attacker.GetComponent<CharacterStater>()._manevres <= 0)
         {
             if (_heroes.Count > 0)
             {

@@ -55,5 +55,10 @@ namespace ScriptsPlayer
             _targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             _isMoving = true;
         }
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            collision.gameObject.SetActive(false);
+        }
     }
 }

@@ -22,9 +22,9 @@ public class CharacterStater : MonoBehaviour
     public int ProtectM;
 
     public int Initiative;
-    public int Manevres;
-    public int uklon;
-    public int tochnost;
+    public int _manevres;
+    public int _uklon;
+    public int _tochnost;
     public int regen;
     public int cost;
     public int vampiric;
@@ -74,9 +74,9 @@ public class CharacterStater : MonoBehaviour
         _characterID = gameObject.GetInstanceID();
         currentDefenceShot = _defenceShot + DefenceShotModifier;
         currentProtectM = ProtectM + ProtectMModifir;
-        currentManevres = Manevres + ManevresModifier;
-        currentuklon = uklon + uklonModifier;
-        currenttochnost = tochnost + tochnostModifier;
+        currentManevres = _manevres + ManevresModifier;
+        currentuklon = _uklon + uklonModifier;
+        currenttochnost = _tochnost + tochnostModifier;
         currentregen = regen + regenModifier;
         currentvampiric = vampiric + vampiricModifier;
         currentIniative = Initiative + InitiativeModifier;
@@ -165,13 +165,13 @@ public class CharacterStater : MonoBehaviour
                 Initiative += 3;
                 break;
             case 11:
-                Manevres += 3;
+                _manevres += 3;
                 break;
             case 12:
-                uklon += 3;
+                _uklon += 3;
                 break;
             case 13:
-                tochnost += 3;
+                _tochnost += 3;
                 break;
             case 14:
                 regen += 3;
@@ -191,9 +191,9 @@ public class CharacterStater : MonoBehaviour
         currentDefenceShot = _defenceShot + DefenceShotModifier;
         currentProtectM = ProtectM + ProtectMModifir;
         currentIniative = Initiative + InitiativeModifier;
-        currentManevres = Manevres + ManevresModifier;
-        currentuklon = uklon + uklonModifier;
-        currenttochnost = tochnost + tochnostModifier;
+        currentManevres = _manevres + ManevresModifier;
+        currentuklon = _uklon + uklonModifier;
+        currenttochnost = _tochnost + tochnostModifier;
         currentregen = regen + regenModifier;
         currentvampiric = vampiric + vampiricModifier;
     }
@@ -229,13 +229,13 @@ public class CharacterStater : MonoBehaviour
                     Initiative += amount;
                     break;
                 case "Manevres":
-                    Manevres += amount;
+                    _manevres += amount;
                     break;
                 case "Uklon":
-                    uklon += amount;
+                    _uklon += amount;
                     break;
                 case "Tochnost":
-                    tochnost += amount;
+                    _tochnost += amount;
                     break;
                 case "Regen":
                     regen += amount;
@@ -273,13 +273,13 @@ public class CharacterStater : MonoBehaviour
                     currentIniative = Initiative + InitiativeModifier;
                     break;
                 case "Manevres":
-                    currentManevres = Manevres + ManevresModifier;
+                    currentManevres = _manevres + ManevresModifier;
                     break;
                 case "Uklon":
-                    currentuklon = uklon + uklonModifier;
+                    currentuklon = _uklon + uklonModifier;
                     break;
                 case "Tochnost":
-                    currenttochnost = tochnost + tochnostModifier;
+                    currenttochnost = _tochnost + tochnostModifier;
                     break;
                 case "Regen":
                     currentregen = regen + regenModifier;
@@ -309,9 +309,9 @@ public class CharacterStater : MonoBehaviour
         currentDefenceShot = _defenceShot + DefenceShotModifier;
         currentProtectM = ProtectM + ProtectMModifir;
         currentIniative = Initiative + InitiativeModifier;
-        currentManevres = Manevres + ManevresModifier;
-        currentuklon = uklon + uklonModifier;
-        currenttochnost = tochnost + tochnostModifier;
+        currentManevres = _manevres + ManevresModifier;
+        currentuklon = _uklon + uklonModifier;
+        currenttochnost = _tochnost + tochnostModifier;
         currentregen = regen + regenModifier;
         currentvampiric = vampiric + vampiricModifier;
     }
