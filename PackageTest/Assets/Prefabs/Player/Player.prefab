@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4863727451246920427}
   - component: {fileID: 4792456284719188880}
   - component: {fileID: 5938585464554614708}
+  - component: {fileID: 3332602232706607792}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -150,7 +151,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.005366415, y: 0.019676484}
+  m_Offset: {x: 0.0012073517, y: 0.008040905}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -161,7 +162,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.35741305, y: 0.5021387}
+  m_Size: {x: 0.28547287, y: 0.47886753}
   m_EdgeRadius: 0
 --- !u!95 &95721569756477734
 Animator:
@@ -227,6 +228,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animator: {fileID: 95721569756477734}
   _movement: {fileID: 4863727451246920427}
+--- !u!114 &3332602232706607792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726022557058710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f441370c498386f4a883dd5f98188a83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 100
+  _mana: 75
+  _gold: 10
+  _healthText: {fileID: 0}
+  _manaText: {fileID: 0}
+  _goldText: {fileID: 0}
 --- !u!1 &1196718574123397669
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,7 +256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9161963085712744790}
   - component: {fileID: 3258422775707241560}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -271,8 +290,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9622642, g: 0.9622642, b: 0.9622642, a: 1}
-  m_Intensity: 1
-  m_Range: 40
+  m_Intensity: 0.95
+  m_Range: 50
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -308,9 +327,9 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
