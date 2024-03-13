@@ -1,3 +1,1 @@
-# Rpg Rts
-
-![image](https://github.com/kerosin122/dissensions/assets/125603037/e5312764-69fb-42ec-85d6-f05914355738)
+![photo_2024-03-13_20-42-42](https://github.com/kerosin122/dissensions/assets/125603037/cf87828b-ae2e-4500-a030-e55d19b3a6ea)
