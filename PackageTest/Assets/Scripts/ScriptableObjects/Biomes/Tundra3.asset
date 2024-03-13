@@ -27,7 +27,7 @@ MonoBehaviour:
     model: {fileID: 11400000, guid: a95b047e84056aa4b8f4bdc338795c3a, type: 2}
   - priority: 10
     model: {fileID: 11400000, guid: 4727645bffea3b1479c09454ae9db777, type: 2}
-  objectsIntensity: 10
+  objectsIntensity: 5
   objects:
   - priority: 10
     model: {fileID: 11400000, guid: 0c250e9173748134d825358484018965, type: 2}

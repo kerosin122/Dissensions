@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Tundra1
   m_EditorClassIdentifier: 
   ground: {fileID: 21300000, guid: 47dd951186743ee43a0cf859b1797c05, type: 3}
-  treesIntensity: 3
+  treesIntensity: 2
   trees:
   - priority: 10
     model: {fileID: 11400000, guid: 0f63a724ede83f648ba00d8239109eb5, type: 2}
@@ -27,7 +27,7 @@ MonoBehaviour:
     model: {fileID: 11400000, guid: a95b047e84056aa4b8f4bdc338795c3a, type: 2}
   - priority: 10
     model: {fileID: 11400000, guid: fd3324d6efc2a974a85d534b9c3c9393, type: 2}
-  objectsIntensity: 10
+  objectsIntensity: 5
   objects:
   - priority: 10
     model: {fileID: 11400000, guid: 0c250e9173748134d825358484018965, type: 2}
@@ -53,7 +53,7 @@ MonoBehaviour:
     model: {fileID: 11400000, guid: 15bb95c51b72d6041a72fd77d8ef2b3a, type: 2}
   - priority: 3
     model: {fileID: 11400000, guid: 7ced2a7a64f176c41bf7c8e5ef998ccd, type: 2}
-  locationsIntensity: 2
+  locationsIntensity: 1
   locations:
   - priority: 20
     model: {fileID: 11400000, guid: 9859e3e90fd5b9c4bbcff963f109d7bd, type: 2}
