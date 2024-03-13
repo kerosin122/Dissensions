@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54a9361619325944e8cd0bc94666d2cb, type: 3}
+  m_Name: Tundra4
+  m_EditorClassIdentifier: 
+  ground: {fileID: 21300000, guid: 6f6aeab83055e3444ac6eb8cbb51540e, type: 3}
+  treesIntensity: 2
+  trees:
+  - priority: 10
+    model: {fileID: 11400000, guid: 0f63a724ede83f648ba00d8239109eb5, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: aa0c5978aa04c1b4380bc4698aa3b719, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: fd3324d6efc2a974a85d534b9c3c9393, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: ab95a4e2e25114d4b91172e70959b403, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: a95b047e84056aa4b8f4bdc338795c3a, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 4727645bffea3b1479c09454ae9db777, type: 2}
+  objectsIntensity: 10
+  objects:
+  - priority: 10
+    model: {fileID: 11400000, guid: 0c250e9173748134d825358484018965, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: bb7e5a29453c50543a7648eaaa639eb2, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 90f7072104b53ea49a62532653fcc216, type: 2}
+  - priority: 5
+    model: {fileID: 11400000, guid: 7980f961d52d6124db95118d51082767, type: 2}
+  - priority: 5
+    model: {fileID: 11400000, guid: 428b23ef731452243acf0658adf1f60a, type: 2}
+  - priority: 5
+    model: {fileID: 11400000, guid: f84efacd10d083144bc71f3607897757, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 02b23195f0c7df641b529077a38e11b3, type: 2}
+  - priority: 3
+    model: {fileID: 11400000, guid: 9c9da2daddf0957489b787a4e8ebf76a, type: 2}
+  - priority: 3
+    model: {fileID: 11400000, guid: 41259fb6bdf228d4b98425e425e4a8b4, type: 2}
+  - priority: 3
+    model: {fileID: 11400000, guid: 779c0fc01311a8d4d872476e9f57e99d, type: 2}
+  - priority: 3
+    model: {fileID: 11400000, guid: 15bb95c51b72d6041a72fd77d8ef2b3a, type: 2}
+  - priority: 3
+    model: {fileID: 11400000, guid: 7ced2a7a64f176c41bf7c8e5ef998ccd, type: 2}
+  locationsIntensity: 1
+  locations:
+  - priority: 20
+    model: {fileID: 11400000, guid: 9859e3e90fd5b9c4bbcff963f109d7bd, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 5db3f8df450a80741bc552f1f9030471, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 10580f0c16dc677499d89a9e3adbb75f, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 5bb730c73c9218547b15e6a9d342180a, type: 2}
