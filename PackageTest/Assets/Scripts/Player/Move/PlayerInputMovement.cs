@@ -20,5 +20,5 @@ namespace ScriptsPlayer
                 OnMoving?.Invoke();
             }
         }
-    }
+    }   
 }
