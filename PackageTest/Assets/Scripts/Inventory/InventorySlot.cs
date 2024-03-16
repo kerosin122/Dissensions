@@ -4,6 +4,5 @@ namespace ScriptsInventory
 {
     public class InventorySlot : MonoBehaviour
     {
-
     }
 }

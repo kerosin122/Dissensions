@@ -9,7 +9,7 @@ namespace ScriptsInventory
         [SerializeField] private List<InventorySlot> _slots;
         [SerializeField] private Transform _inventoryTransform;
 
-        private bool _isOpen;
+        private bool _isOpenInventoryPanel;
 
         private void Start()
         {
@@ -26,12 +26,12 @@ namespace ScriptsInventory
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                _isOpen = !_isOpen;
-
-                _inventoryPanel.SetActive(_isOpen);
+                _isOpenInventoryPanel = !_isOpenInventoryPanel;
+                _inventoryPanel.SetActive(_isOpenInventoryPanel);
             }
         }
 
         public void CloseInventoryPanelButton() => _inventoryPanel.SetActive(false);
+        public void OpenButtonInventory() => _inventoryPanel.SetActive(true);
     }
 }

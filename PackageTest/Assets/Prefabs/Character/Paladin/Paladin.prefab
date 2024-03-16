@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 920417828850888916}
   - component: {fileID: 2109475128594711616}
   - component: {fileID: 3540172091929836811}
+  - component: {fileID: 4251499699485730569}
   m_Layer: 7
   m_Name: Paladin
   m_TagString: Untagged
@@ -243,3 +244,15 @@ MonoBehaviour:
   _mana: 75
   _gold: 10
   _characteristicsText: {fileID: 0}
+--- !u!114 &4251499699485730569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6270588621615248627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66034dadde4138f489b53471acc672e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
