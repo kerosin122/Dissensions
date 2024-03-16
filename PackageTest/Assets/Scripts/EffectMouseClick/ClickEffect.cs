@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 
 public class ClickEffect : MonoBehaviour
 {
-    private const float TimeDestroyObject = 2f;
+    private const float TimeDestroyObject = 1f;
 
     [SerializeField] private GameObject _effectPrefab;
 

@@ -11,6 +11,8 @@ namespace ScriptsInventory
 
         private bool _isOpenInventoryPanel;
 
+        private void Awake() => _inventoryPanel.SetActive(true);
+
         private void Start()
         {
             for (int index = 0; index < _inventoryTransform.childCount; index++)
@@ -31,7 +33,31 @@ namespace ScriptsInventory
             }
         }
 
-        public void CloseInventoryPanelButton() => _inventoryPanel.SetActive(false);
-        public void OpenButtonInventory() => _inventoryPanel.SetActive(true);
+        public void AddItem(ItemScriptableObject item, int amount)
+        {
+            foreach (InventorySlot slot in _slots)
+            {
+                if (slot.Item == item)
+                {
+                    slot.Amount += amount;
+                    slot.ItemAmountText.text = slot.Amount.ToString();
+                    return;
+                }
+            }
+
+            foreach (InventorySlot slot in _slots)
+            {
+                if (slot.IsEmpty == false)
+                {
+                    slot.Item = item;
+                    slot.Amount = amount;
+                    slot.IsEmpty = false;
+                    slot.SetIcon(item.Icon);
+                    slot.ItemAmountText.text = amount.ToString();
+
+                    break;
+                }
+            }
+        }
     }
 }
