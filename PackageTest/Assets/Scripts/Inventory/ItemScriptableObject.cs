@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace ScriptsInventory
 {
-    [CreateAssetMenu(fileName = "Item", menuName = "InventoryItem", order = 51)]
+    [CreateAssetMenu(fileName = "Item", menuName = "InventoryItem/Items", order = 51)]
     public class ItemScriptableObject : ScriptableObject
     {
         public string NameItem => _nameItem;

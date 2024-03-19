@@ -7,15 +7,20 @@ namespace ScriptsInventory
     public class InventorySlot : MonoBehaviour
     {
         public int Amount { get; set; }
-        public ItemScriptableObject Item { get; set; }
         public bool IsEmpty { get; set; }
-        public TextMeshProUGUI ItemAmountText { get; set; }
+        public ItemScriptableObject Item { get; set; }
+
+        public TextMeshProUGUI ItemAmountText
+        {
+            get { return _itemAmountText; }
+            set { _itemAmountText = value; }
+        }
 
         [SerializeField] int _amount;
-        [SerializeField] ItemScriptableObject _item;
-        [SerializeField] private bool _isEmpty = true;
         [SerializeField] private GameObject _icon;
         [SerializeField] private TextMeshProUGUI _itemAmountText;
+        [SerializeField] ItemScriptableObject _item;
+        [SerializeField] private bool _isEmpty = true;
 
         private void Awake()
         {

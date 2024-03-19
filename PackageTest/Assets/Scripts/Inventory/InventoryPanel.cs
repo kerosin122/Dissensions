@@ -6,8 +6,8 @@ namespace ScriptsInventory
     public class InventoryPanel : MonoBehaviour
     {
         [SerializeField] private GameObject _inventoryPanel;
-        [SerializeField] private List<InventorySlot> _slots;
-        [SerializeField] private Transform _inventoryTransform;
+        [SerializeField] private List<InventorySlot> _slots = new List<InventorySlot>();
+        [SerializeField] private Transform _inventoryTransformPanel;
 
         private bool _isOpenInventoryPanel;
 
@@ -15,11 +15,13 @@ namespace ScriptsInventory
 
         private void Start()
         {
-            for (int index = 0; index < _inventoryTransform.childCount; index++)
+            for (int index = 0; index < _inventoryTransformPanel.childCount; index++)
             {
-                if (_inventoryTransform.GetChild(index).GetComponent<InventorySlot>() != null)
-                    _slots.Add(_inventoryTransform.GetChild(index).GetComponent<InventorySlot>());
+                if (_inventoryTransformPanel.GetChild(index).GetComponent<InventorySlot>() != null)
+                    _slots.Add(_inventoryTransformPanel.GetChild(index).GetComponent<InventorySlot>());
             }
+
+            _inventoryPanel.SetActive(false);
         }
 
         private void Update() => OpenOrClosePanel();
@@ -39,15 +41,19 @@ namespace ScriptsInventory
             {
                 if (slot.Item == item)
                 {
-                    slot.Amount += amount;
-                    slot.ItemAmountText.text = slot.Amount.ToString();
-                    return;
+                    if (slot.Amount + amount <= item.MaximumAmount)
+                    {
+                        slot.Amount += amount;
+                        slot.ItemAmountText.text = slot.Amount.ToString();
+                    }
+
+                    break;
                 }
             }
 
             foreach (InventorySlot slot in _slots)
             {
-                if (slot.IsEmpty == false)
+                if (slot.IsEmpty == true)
                 {
                     slot.Item = item;
                     slot.Amount = amount;
