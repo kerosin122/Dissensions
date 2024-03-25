@@ -6,7 +6,7 @@ namespace Towny
     public class Recruitment : MonoBehaviour
     {
         [SerializeField] private GameObject _townPanelUI;
-        [SerializeField] private GameObject _warriorPanelUI;
+        [SerializeField] private GameObject _militaryPanelUI;
 
         public static Recruitment Instance;
         public List<string> _squad = new();
@@ -19,10 +19,10 @@ namespace Towny
                 _townPanelUI.SetActive(true);
         }
 
-        public void OpenWarriorPanelOnClick() => _warriorPanelUI.SetActive(true);
+        public void OpenWarriorPanelOnClick() => _militaryPanelUI.SetActive(true);
 
         public void ExitTownOnClick() => _townPanelUI.SetActive(false);
-        public void ExitWarriorOnClick() => _warriorPanelUI.SetActive(false);
+        public void ExitWarriorOnClick() => _militaryPanelUI.SetActive(false);
 
 
     }
