@@ -6,10 +6,11 @@ namespace ShopSystem
     [System.Serializable]
     public abstract class ShopSlot : MonoBehaviour
     {
+        [Header("Button components")]
         [SerializeField] protected TextMeshProUGUI _itemTitle;
-        [SerializeField] protected int _price;
         [SerializeField] protected TextMeshProUGUI _priceText;
-
+        [Header("Items components")]
+        [SerializeField] protected int _price;
         public virtual void Purchase()
         {
 

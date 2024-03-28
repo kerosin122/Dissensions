@@ -33,8 +33,15 @@ namespace ShopSystem
 
         public override void Purchase()
         {
-            ClearItem();
-            Debug.Log("Продано");
+            if(_item != null)
+            {
+                ClearItem();
+                Debug.Log("Продано");
+            }
+            else
+            {
+                Debug.Log("Предмет уже продан");
+            }
         }
     }
 }

@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class GameShopSystemManager : MonoBehaviour
 {
+    public static GameShopSystemManager instance;
+
     [Header("Shop components")]
     [SerializeField] private GameObject _shop;
     [SerializeField] private List<GameShopSlot> _shopSlots;
@@ -22,8 +24,21 @@ public class GameShopSystemManager : MonoBehaviour
 
     private void Start()
     {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
         _sortedItems = SearchForItemsByPrice();
         StartCoroutine(UpdateItemTimer());
+    }
+
+    public void ToggleShop()
+    {
+        _shop.SetActive(!_shop.activeSelf);
     }
 
     private IEnumerator UpdateItemTimer()
@@ -31,7 +46,7 @@ public class GameShopSystemManager : MonoBehaviour
         while (_shopManagerActive)
         {
             IssuanceOfNewItems();
-            if (_shop.activeSelf)
+            if (_shop.activeSelf && _sortedItems.Count > 0)
             {
                 for(int i = 0; i < _shopSlots.Count; i++)
                 {
@@ -40,19 +55,37 @@ public class GameShopSystemManager : MonoBehaviour
                 Debug.Log("Предметы обновлены");
                 yield return new WaitForSeconds(_shopUpdateTime);
             }
+            else
+            {
+                yield return new WaitForSeconds(_shopUpdateTime);
+            }
             yield return null;
         }
     }
     private void IssuanceOfNewItems()
     {
         _randomTakedItems.Clear();
-        int randomNumber = 0;
-        for (int i = 0; i < _shopSlots.Count; i++)
+        if (_sortedItems.Count > 0)
         {
-            randomNumber = Random.Range(0, _sortedItems.Count);
-            _randomTakedItems.Add(_sortedItems[randomNumber]);
+            int randomNumber = 0;
+            for (int i = 0; i < _shopSlots.Count; i++)
+            {
+                randomNumber = Random.Range(0, _sortedItems.Count);
+                if (_sortedItems[randomNumber] != null)
+                {
+                    _randomTakedItems.Add(_sortedItems[randomNumber]);
+                }
+                else
+                {
+                    i--;
+                }
+            }
+            Debug.Log("Список предметов обновлен");
         }
-        Debug.Log("Список предметов обновлен");
+        else
+        {
+            Debug.Log("Нет предметов для продажи");
+        }
     }
 
     private List<ItemScriptableObject> SearchForItemsByPrice()
