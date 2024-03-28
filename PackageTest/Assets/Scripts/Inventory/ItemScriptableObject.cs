@@ -12,11 +12,14 @@ namespace ScriptsInventory
         public GameObject PrefabItem => _prefabItem;
         public Sprite Icon => _icon;
 
+        public int Cost => _cost;
+
         [SerializeField] private string _nameItem;
         [SerializeField] private int _maximumAmount;
         [SerializeField] private string _descriptionItem;
         [SerializeField] private ItemType _itemType;
         [SerializeField] private GameObject _prefabItem;
         [SerializeField] private Sprite _icon;
+        [SerializeField] private int _cost;
     }
 }
