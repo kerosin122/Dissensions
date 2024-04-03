@@ -12,15 +12,24 @@ namespace ShopSystem
         private void Start()
         {
             _image = GetComponent<Image>();
+            SetItem(_item);
         }
 
         public void SetItem(ItemScriptableObject item)
         {
+            if(item != null) {
             _item = item;
             _price = item.Cost;
             _image.sprite = item.Icon;
             _itemTitle.text = item.NameItem;
             _priceText.text = _price.ToString();
+            }
+            else
+            {
+                _price = 0;
+                _itemTitle.text = "Пусто";
+                _priceText.text = _price.ToString();
+            }
         }
         public void ClearItem()
         {
@@ -33,15 +42,10 @@ namespace ShopSystem
 
         public override void Purchase()
         {
-            if(_item != null)
-            {
-                ClearItem();
-                Debug.Log("Продано");
-            }
-            else
-            {
-                Debug.Log("Предмет уже продан");
-            }
+            bool acceptOperation = false;
+            GameShopSystemManager.instance.PurchaseItem(_item, out acceptOperation);
+
+            if (acceptOperation) ClearItem();
         }
     }
 }

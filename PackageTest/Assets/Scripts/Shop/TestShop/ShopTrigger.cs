@@ -14,6 +14,7 @@ public class ShopTrigger : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             GameShopSystemManager.instance.ToggleShop();
+            GameShopSystemManager.instance.OffAllShops();
         }
     }
 }

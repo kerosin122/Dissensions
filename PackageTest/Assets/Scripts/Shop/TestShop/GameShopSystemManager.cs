@@ -1,3 +1,4 @@
+using ScriptCharacteristics;
 using ScriptsInventory;
 using ShopSystem;
 using System.Collections;
@@ -8,19 +9,28 @@ public class GameShopSystemManager : MonoBehaviour
 {
     public static GameShopSystemManager instance;
 
+    [Header("Player")]
+    [SerializeField] private PlayerCharacteristics _player;
+    [SerializeField] private float _gold;
     [Header("Shop components")]
-    [SerializeField] private GameObject _shop;
-    [SerializeField] private List<GameShopSlot> _shopSlots;
+    [SerializeField] private GameObject _townShop;
+    [SerializeField,Tooltip("Вкладка предметов")] private GameObject _itemShop;
+    [SerializeField] private List<GameShopItemSlot> _itemShopSlots;
+    [SerializeField, Tooltip("Вкладка найма")] private GameObject _militaryShop;
+    [SerializeField] private List<GameShopMilitarySlot> _militaryShopSlots;
 
     [Header("Items")]
     [SerializeField, Tooltip("Все предметы для магазина")] private List <ItemScriptableObject> _allShopGameItems;
     [SerializeField, Tooltip("Отсортированные предметы по цене")] private List<ItemScriptableObject> _sortedItems;
     [SerializeField,Tooltip("Продающиеся предметы")] private List<ItemScriptableObject> _randomTakedItems;
 
-    [Header("Configuration parameterth")]
+    [Header("Configuration parameterth Items")]
     [SerializeField] private int _shopUpdateTime;
     [SerializeField] private int _minBuyPrice, _maxBuyPrice;
-    [SerializeField] private bool _shopManagerActive = true;
+    [SerializeField] private bool _shopitemsUpdateActive = true;
+
+    [Header("Military")]
+    private List<GameObject> _allShopGameMilitary;
 
     private void Start()
     {
@@ -35,22 +45,67 @@ public class GameShopSystemManager : MonoBehaviour
         _sortedItems = SearchForItemsByPrice();
         StartCoroutine(UpdateItemTimer());
     }
-
-    public void ToggleShop()
+    #region Shop toggle methods
+    public void ToggleShop() => _townShop.SetActive(!_townShop.activeSelf);
+    public void ToggleItemShop() => _itemShop.SetActive(!_itemShop.activeSelf);
+    public void ToggleMilitaryShop() => _militaryShop.SetActive(!_militaryShop.activeSelf);
+    public void OffAllShops()
     {
-        _shop.SetActive(!_shop.activeSelf);
+        _itemShop.SetActive(false);
+        _militaryShop.SetActive(false);
     }
-
+    #endregion
+    public void GoldUpdate() => _gold = _player.Gold;
+    public bool PurchaseItem(ItemScriptableObject item,out bool transactionConfirmation)
+    {
+        if (item != null)
+        {
+            if (_gold >= item.Cost)
+            {
+                _gold -= item.Cost;
+                // добавляем в инвентарь
+                transactionConfirmation = true;
+                GoldUpdate();
+            }
+            else
+            {
+                Debug.Log("Недостаточно средств");
+                transactionConfirmation = false;
+            }
+        }
+        else
+        {
+            transactionConfirmation = false;
+        }
+        return transactionConfirmation;
+    }
+    public bool PurchaseMilitary(Military solder, out bool transactionConfirmation)
+    {
+        if (_gold >= solder.Cost)
+        {
+            _gold -= solder.Cost;
+            // добавляем в инвентарь
+            transactionConfirmation = true;
+        }
+        else
+        {
+            Debug.Log("Недостаточно средств");
+            transactionConfirmation = false;
+        }
+        GoldUpdate();
+        return transactionConfirmation;
+    }
+    #region Items department
     private IEnumerator UpdateItemTimer()
     {
-        while (_shopManagerActive)
+        while (_shopitemsUpdateActive)
         {
             IssuanceOfNewItems();
-            if (_shop.activeSelf && _sortedItems.Count > 0)
+            if (_itemShop.activeSelf && _sortedItems.Count > 0)
             {
-                for(int i = 0; i < _shopSlots.Count; i++)
+                for(int i = 0; i < _itemShopSlots.Count; i++)
                 {
-                    _shopSlots[i].SetItem(_randomTakedItems[i]);
+                    _itemShopSlots[i].SetItem(_randomTakedItems[i]);
                 }
                 Debug.Log("Предметы обновлены");
                 yield return new WaitForSeconds(_shopUpdateTime);
@@ -68,7 +123,7 @@ public class GameShopSystemManager : MonoBehaviour
         if (_sortedItems.Count > 0)
         {
             int randomNumber = 0;
-            for (int i = 0; i < _shopSlots.Count; i++)
+            for (int i = 0; i < _itemShopSlots.Count; i++)
             {
                 randomNumber = Random.Range(0, _sortedItems.Count);
                 if (_sortedItems[randomNumber] != null)
@@ -100,4 +155,8 @@ public class GameShopSystemManager : MonoBehaviour
         }
         return result;
     }
+    #endregion
+    #region Military department
+
+    #endregion
 }

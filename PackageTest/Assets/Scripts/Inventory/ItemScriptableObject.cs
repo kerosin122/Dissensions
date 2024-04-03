@@ -11,7 +11,6 @@ namespace ScriptsInventory
         public ItemType Type => _itemType;
         public GameObject PrefabItem => _prefabItem;
         public Sprite Icon => _icon;
-
         public int Cost => _cost;
 
         [SerializeField] private string _nameItem;
