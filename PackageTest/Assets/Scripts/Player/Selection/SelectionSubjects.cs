@@ -12,9 +12,9 @@ namespace ScriptsPlayer
 
         private const float TimeDisappearText = 1f;
 
+        [SerializeField] private Image _iconProduct;
         [SerializeField] private TextMeshProUGUI _hintText;
         [SerializeField] private InventoryPanel _inventoryPanel;
-        [SerializeField] private Image _iconProduct;
 
         [SerializeField] private Animator _animator;
 
@@ -22,18 +22,15 @@ namespace ScriptsPlayer
 
         private void Lifting(Collision2D collider)
         {
-            if (Input.GetKeyDown(KeyCode.F))
+            if (collider.gameObject.TryGetComponent(out Weapon item))
             {
-                if (collider.gameObject.TryGetComponent(out Weapon item))
-                {
-                    _inventoryPanel.AddItem(collider.gameObject.GetComponent<Weapon>().Item, collider.gameObject.GetComponent<Weapon>().Amount);
-                    Destroy(collider.gameObject);
+                _inventoryPanel.AddItem(collider.gameObject.GetComponent<Weapon>().Item, collider.gameObject.GetComponent<Weapon>().Amount);
+                Destroy(collider.gameObject);
 
-                    _animator.SetTrigger(AppearancePanel);
+                _animator.SetTrigger(AppearancePanel);
 
-                    DrawInformationProduct(item); 
-                    StartCoroutine(TransparencyWeaponText());
-                }
+                DrawInformationProduct(item);
+                StartCoroutine(TransparencyWeaponText());
             }
         }
 

@@ -8,7 +8,12 @@ namespace ScriptsInventory
     {
         public int Amount { get; set; }
         public bool IsEmpty { get; set; }
-        public ItemScriptableObject Item { get; set; }
+
+        public ItemScriptableObject Item
+        {
+            get { return _item; }
+            set { _item = value; }
+        }
 
         public TextMeshProUGUI ItemAmountText
         {

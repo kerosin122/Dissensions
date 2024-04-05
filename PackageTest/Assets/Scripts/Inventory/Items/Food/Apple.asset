@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Apple
   m_EditorClassIdentifier: 
   _nameItem: Apple
-  _maximumAmount: 1
+  _maximumAmount: 2
   _descriptionItem: An ordinary apple
   _itemType: 1
   _prefabItem: {fileID: 8548738387275196150, guid: d85a2de8ebb746c43b72ff6575f16892,

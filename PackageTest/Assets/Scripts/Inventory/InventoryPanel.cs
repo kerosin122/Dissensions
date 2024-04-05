@@ -61,6 +61,7 @@ namespace ScriptsInventory
                     slot.SetIcon(item.Icon);
                     slot.ItemAmountText.text = amount.ToString();
 
+
                     break;
                 }
             }

@@ -13,7 +13,7 @@ namespace ScriptsInventory
         public Sprite Icon => _icon;
 
         [SerializeField] private string _nameItem;
-        [SerializeField] private int _maximumAmount;
+        [SerializeField, Range(1, 10)] private int _maximumAmount;
         [SerializeField] private string _descriptionItem;
         [SerializeField] private ItemType _itemType;
         [SerializeField] private GameObject _prefabItem;
