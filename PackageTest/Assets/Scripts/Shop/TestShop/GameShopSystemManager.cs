@@ -15,7 +15,7 @@ public class GameShopSystemManager : MonoBehaviour
     [Header("Shop components")]
     [SerializeField] private GameObject _townShop;
     [SerializeField,Tooltip("Вкладка предметов")] private GameObject _itemShop;
-    [SerializeField] private List<GameShopItemSlot> _itemShopSlots;
+    [SerializeField] private List<GameShopSlot> _itemShopSlots;
     [SerializeField, Tooltip("Вкладка найма")] private GameObject _militaryShop;
     [SerializeField] private List<GameShopMilitarySlot> _militaryShopSlots;
 
@@ -28,6 +28,8 @@ public class GameShopSystemManager : MonoBehaviour
     [SerializeField] private int _shopUpdateTime;
     [SerializeField] private int _minBuyPrice, _maxBuyPrice;
     [SerializeField] private bool _shopitemsUpdateActive = true;
+    
+    private bool _firstOpen = true,_shopUpdateOption = true;
 
     [Header("Military")]
     private List<GameObject> _allShopGameMilitary;
@@ -47,7 +49,15 @@ public class GameShopSystemManager : MonoBehaviour
     }
     #region Shop toggle methods
     public void ToggleShop() => _townShop.SetActive(!_townShop.activeSelf);
-    public void ToggleItemShop() => _itemShop.SetActive(!_itemShop.activeSelf);
+    public void ToggleItemShop()
+    {
+        _itemShop.SetActive(!_itemShop.activeSelf);
+        if (_firstOpen)
+        {
+            UpdateItems();
+            _firstOpen = false;
+        }
+    }
     public void ToggleMilitaryShop() => _militaryShop.SetActive(!_militaryShop.activeSelf);
     public void OffAllShops()
     {
@@ -98,23 +108,12 @@ public class GameShopSystemManager : MonoBehaviour
     #region Items department
     private IEnumerator UpdateItemTimer()
     {
+        IssuanceOfNewItems();
         while (_shopitemsUpdateActive)
         {
+            yield return new WaitForSeconds(_shopUpdateTime);
             IssuanceOfNewItems();
-            if (_itemShop.activeSelf && _sortedItems.Count > 0)
-            {
-                for(int i = 0; i < _itemShopSlots.Count; i++)
-                {
-                    _itemShopSlots[i].SetItem(_randomTakedItems[i]);
-                }
-                Debug.Log("Предметы обновлены");
-                yield return new WaitForSeconds(_shopUpdateTime);
-            }
-            else
-            {
-                yield return new WaitForSeconds(_shopUpdateTime);
-            }
-            yield return null;
+            _shopUpdateOption = true;
         }
     }
     private void IssuanceOfNewItems()
@@ -140,6 +139,17 @@ public class GameShopSystemManager : MonoBehaviour
         else
         {
             Debug.Log("Нет предметов для продажи");
+        }
+    }
+    public void UpdateItems()
+    {
+        if (_shopUpdateOption)
+        {
+            for (int i = 0; i < _itemShopSlots.Count; i++)
+            {
+                _itemShopSlots[i].SetItem(_randomTakedItems[i]);
+            }
+            _shopUpdateOption = false;
         }
     }
 

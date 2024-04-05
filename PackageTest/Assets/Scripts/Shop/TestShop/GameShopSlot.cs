@@ -7,29 +7,29 @@ namespace ShopSystem
     public class GameShopSlot : ShopSlot
     {
         [SerializeField] private ItemScriptableObject _item;
+        [SerializeField] private int _count;
         [SerializeField] private Image _image;
+        private bool _transactionConfirmation;
 
         private void Start()
         {
             _image = GetComponent<Image>();
-            SetItem(_item);
         }
 
         public void SetItem(ItemScriptableObject item)
         {
-            if(item != null) {
-            _item = item;
-            _price = item.Cost;
-            _image.sprite = item.Icon;
-            _itemTitle.text = item.NameItem;
-            _priceText.text = _price.ToString();
+            if (item != null)
+            {
+                _item = item;
+                _price = item.Cost;
+                _image.sprite = item.Icon;
+                _itemTitle.text = item.NameItem;
+                _priceText.text = _price.ToString();
             }
             else
             {
-                _price = 0;
-                _itemTitle.text = "Пусто";
-                _priceText.text = _price.ToString();
-            }
+
+            } 
         }
         public void ClearItem()
         {
@@ -42,10 +42,15 @@ namespace ShopSystem
 
         public override void Purchase()
         {
-            bool acceptOperation = false;
-            GameShopSystemManager.instance.PurchaseItem(_item, out acceptOperation);
-
-            if (acceptOperation) ClearItem();
+            if(_item != null && _count > 0)
+            {
+                GameShopSystemManager.instance.PurchaseItem(_item,out _transactionConfirmation);
+                if (_transactionConfirmation)
+                {
+                    _count -= 1;
+                    if (_count <= 0) ClearItem();
+                }
+            }
         }
     }
 }

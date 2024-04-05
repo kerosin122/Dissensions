@@ -19,4 +19,4 @@ MonoBehaviour:
   _prefabItem: {fileID: 8548738387275196150, guid: d85a2de8ebb746c43b72ff6575f16892,
     type: 3}
   _icon: {fileID: 21300000, guid: 14fd71c87b419f946b0c4927145b0fb5, type: 3}
-  _cost: 5
+  _cost: 100
