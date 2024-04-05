@@ -29,6 +29,12 @@ namespace ScriptsInventory
             set { _itemAmountText = value; }
         }
 
+        public Image Icon
+        {
+            get { return _icon; }
+            set { _icon = value; }
+        }
+
         [SerializeField] int _amount;
         [SerializeField] private Image _icon;
         [SerializeField] private TextMeshProUGUI _itemAmountText;
