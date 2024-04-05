@@ -48,9 +48,7 @@ namespace ScriptsInventory
             }
 
             else if (eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.GetComponent<InventorySlot>() != null)
-            {
                 ExchangeSlotData(eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.GetComponent<InventorySlot>());
-            }
         }
 
         private void NullifySlotData()
