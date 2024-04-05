@@ -45,6 +45,8 @@ namespace ScriptsInventory
                     {
                         slot.Amount += amount;
                         slot.ItemAmountText.text = slot.Amount.ToString();
+
+                        return;
                     }
 
                     break;
@@ -60,7 +62,6 @@ namespace ScriptsInventory
                     slot.IsEmpty = false;
                     slot.SetIcon(item.Icon);
                     slot.ItemAmountText.text = amount.ToString();
-
 
                     break;
                 }

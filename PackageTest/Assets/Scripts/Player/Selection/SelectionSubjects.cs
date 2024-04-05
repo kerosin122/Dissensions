@@ -18,7 +18,7 @@ namespace ScriptsPlayer
 
         [SerializeField] private Animator _animator;
 
-        private void OnCollisionStay2D(Collision2D collision) => Lifting(collision);
+        private void OnCollisionEnter2D(Collision2D collision) => Lifting(collision);
 
         private void Lifting(Collision2D collider)
         {
