@@ -43,8 +43,8 @@ namespace ScriptsInventory
 
         private void Awake()
         {
-            _icon = gameObject.transform.GetChild(0).GetComponent<Image>();
-            _itemAmountText = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
+            _icon = gameObject.transform.GetChild(0).GetChild(0).GetComponent<Image>();
+            _itemAmountText = transform.GetChild(0).GetChild(1).GetComponent<TextMeshProUGUI>();
         }
 
         public void SetIcon(Sprite icon)

@@ -7,13 +7,13 @@ namespace ScriptsInventory
 {
     public class DragAndDropItem : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
     {
-        [SerializeField] private InventorySlot _inventorySlot;
-        [SerializeField] private Transform _player;
+        private Transform _player;
+        private InventorySlot _inventorySlot;
 
-        private void Start()
+        private void Awake()
         {
-            _player = GetComponent<Transform>();
             _inventorySlot = transform.GetComponentInParent<InventorySlot>();
+            _player = GameObject.FindGameObjectWithTag("Player").transform;
         }
 
         public void OnDrag(PointerEventData eventData)
@@ -38,7 +38,7 @@ namespace ScriptsInventory
 
             transform.position = _inventorySlot.transform.position;
 
-            if (eventData.pointerCurrentRaycast.gameObject.CompareTag("InventoryPanel"))
+            if (eventData.pointerCurrentRaycast.gameObject.CompareTag("DropPanel"))
             {
                 GameObject item = Instantiate(_inventorySlot.Item.PrefabItem, _player.position + Vector3.up + _player.forward, Quaternion.identity);
 
@@ -56,7 +56,7 @@ namespace ScriptsInventory
             _inventorySlot.Item = null;
             _inventorySlot.Amount = 0;
             _inventorySlot.IsEmpty = true;
-            _inventorySlot.Icon.color = new Color(0.5f, 0.5f, 0.5f, 1f);
+            _inventorySlot.Icon.color = new Color(0.5f, 0.5f, 0.5f, 0f);
             _inventorySlot.Icon.sprite = null;
             _inventorySlot.ItemAmountText.text = "";
         }
@@ -74,13 +74,13 @@ namespace ScriptsInventory
 
             if (_inventorySlot.IsEmpty == false)
             {
-                newSlot.SetIcon(_inventorySlot.Icon.GetComponent<Image>().sprite);
+                newSlot.SetIcon(_inventorySlot.Icon.sprite);
                 newSlot.ItemAmountText.text = _inventorySlot.Amount.ToString();
             }
 
             else
             {
-                newSlot.Icon.color = new Color(0.5f, 0.5f, 0.5f, 1f);
+                newSlot.Icon.color = new Color(0.5f, 0.5f, 0.5f, 0f);
                 newSlot.Icon.sprite = null;
 
                 newSlot.ItemAmountText.text = "";
@@ -99,7 +99,7 @@ namespace ScriptsInventory
 
             else
             {
-                _inventorySlot.Icon.color = new Color(0.5f, 0.5f, 0.5f, 1f);
+                _inventorySlot.Icon.color = new Color(0.5f, 0.5f, 0.5f, 0f);
                 _inventorySlot.Icon.sprite = null;
                 _inventorySlot.ItemAmountText.text = "";
             }
@@ -115,7 +115,7 @@ namespace ScriptsInventory
 
         private void ChangeColorAndRecastTarget(bool isActive)
         {
-            GetComponentInChildren<Image>().color = new Color(0.5f, 0.5f, 0.5f, 1f);
+            GetComponentInChildren<Image>().color = new Color(0.5f, 0.5f, 0.5f, 0.8f);
             GetComponentInChildren<Image>().raycastTarget = isActive;
 
             transform.SetParent(transform.parent.parent);
