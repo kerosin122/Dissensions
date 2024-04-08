@@ -22,21 +22,27 @@ namespace ScriptsInventory
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            CheckGameObjectIsEmpty();
+            if (_inventorySlot.IsEmpty)
+                return;
 
-            ChangeColorAndRecastTarget(0.5f, false);
-
-            transform.SetParent(transform.parent.parent.parent);
+            else
+            {
+                ChangeColorAndRecastTarget(0.5f, false);
+                transform.SetParent(transform.parent.parent.parent);
+            }
         }
 
         public void OnPointerUp(PointerEventData eventData)
         {
-            CheckGameObjectIsEmpty();
+            if (_inventorySlot.IsEmpty)
+                return;
 
-            ChangeColorAndRecastTarget(1f, true);
-
-            transform.SetParent(_inventorySlot.transform);
-            transform.position = _inventorySlot.transform.position;
+            else
+            {
+                ChangeColorAndRecastTarget(1f, true);
+                transform.SetParent(_inventorySlot.transform);
+                transform.position = _inventorySlot.transform.position;
+            }
 
             if (eventData.pointerCurrentRaycast.gameObject.CompareTag("BackgroundInventoryPanel"))
             {
@@ -51,7 +57,6 @@ namespace ScriptsInventory
 
             else if (eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.GetComponent<InventorySlot>() != null)
                 ExchangeSlotData(eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.GetComponent<InventorySlot>());
-
         }
 
         private void NullifySlotData()
