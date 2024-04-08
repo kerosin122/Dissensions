@@ -36,7 +36,7 @@ namespace ScriptsPlayer
 
         private void DrawInformationProduct(Weapon item)
         {
-            _hintText.text = $"You have picked up:   {item.name}";
+            _hintText.text = $"You have picked up:   {item.tag}";
             _iconProduct.sprite = item.Item.Icon;
         }
 

@@ -1,5 +1,5 @@
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections.Generic;
 
 namespace Towny
 {
@@ -23,8 +23,5 @@ namespace Towny
 
         public void ExitTownOnClick() => _townPanelUI.SetActive(false);
         public void ExitWarriorOnClick() => _militaryPanelUI.SetActive(false);
-
-
     }
 }
-

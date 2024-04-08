@@ -7,14 +7,11 @@ namespace ScriptsInventory
 {
     public class DragAndDropItem : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
     {
-        private Transform _player;
+        [SerializeField] private Transform _player;
+
         private InventorySlot _inventorySlot;
 
-        private void Awake()
-        {
-            _inventorySlot = transform.GetComponentInParent<InventorySlot>();
-            _player = GameObject.FindGameObjectWithTag("Player").transform;
-        }
+        private void Start() => _inventorySlot = transform.GetComponentInParent<InventorySlot>();
 
         public void OnDrag(PointerEventData eventData)
         {
@@ -27,28 +24,34 @@ namespace ScriptsInventory
         {
             CheckGameObjectIsEmpty();
 
-            ChangeColorAndRecastTarget(false);
+            ChangeColorAndRecastTarget(0.5f, false);
+
+            transform.SetParent(transform.parent.parent.parent);
         }
 
         public void OnPointerUp(PointerEventData eventData)
         {
             CheckGameObjectIsEmpty();
 
-            ChangeColorAndRecastTarget(true);
+            ChangeColorAndRecastTarget(1f, true);
 
+            transform.SetParent(_inventorySlot.transform);
             transform.position = _inventorySlot.transform.position;
 
-            if (eventData.pointerCurrentRaycast.gameObject.CompareTag("DropPanel"))
+            if (eventData.pointerCurrentRaycast.gameObject.CompareTag("BackgroundInventoryPanel"))
             {
-                GameObject item = Instantiate(_inventorySlot.Item.PrefabItem, _player.position + Vector3.up + _player.forward, Quaternion.identity);
-
+                GameObject item = Instantiate(_inventorySlot.Item.PrefabItem, _player.position + Vector3.down + _player.right, Quaternion.identity);
                 item.GetComponent<Weapon>().Amount = _inventorySlot.Amount;
 
                 NullifySlotData();
             }
 
+            else if (eventData.pointerCurrentRaycast.gameObject.transform.parent.parent == null)
+                return;
+
             else if (eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.GetComponent<InventorySlot>() != null)
                 ExchangeSlotData(eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.GetComponent<InventorySlot>());
+
         }
 
         private void NullifySlotData()
@@ -58,7 +61,7 @@ namespace ScriptsInventory
             _inventorySlot.IsEmpty = true;
             _inventorySlot.Icon.color = new Color(0.5f, 0.5f, 0.5f, 0f);
             _inventorySlot.Icon.sprite = null;
-            _inventorySlot.ItemAmountText.text = "";
+            _inventorySlot.ItemAmountText.text = string.Empty;
         }
 
         private void ExchangeSlotData(InventorySlot newSlot)
@@ -82,8 +85,7 @@ namespace ScriptsInventory
             {
                 newSlot.Icon.color = new Color(0.5f, 0.5f, 0.5f, 0f);
                 newSlot.Icon.sprite = null;
-
-                newSlot.ItemAmountText.text = "";
+                newSlot.ItemAmountText.text = string.Empty;
             }
 
             newSlot.IsEmpty = _inventorySlot.IsEmpty;
@@ -93,7 +95,7 @@ namespace ScriptsInventory
 
             if (isEmpty == false)
             {
-                _inventorySlot.SetIcon(icon.sprite);
+                _inventorySlot.SetIcon(icon.GetComponent<Image>().sprite);
                 _inventorySlot.ItemAmountText.text = amount.ToString();
             }
 
@@ -101,7 +103,7 @@ namespace ScriptsInventory
             {
                 _inventorySlot.Icon.color = new Color(0.5f, 0.5f, 0.5f, 0f);
                 _inventorySlot.Icon.sprite = null;
-                _inventorySlot.ItemAmountText.text = "";
+                _inventorySlot.ItemAmountText.text = string.Empty;
             }
 
             _inventorySlot.IsEmpty = isEmpty;
@@ -113,12 +115,10 @@ namespace ScriptsInventory
                 return;
         }
 
-        private void ChangeColorAndRecastTarget(bool isActive)
+        private void ChangeColorAndRecastTarget(float transparency, bool isActive)
         {
-            GetComponentInChildren<Image>().color = new Color(0.5f, 0.5f, 0.5f, 0.8f);
+            GetComponentInChildren<Image>().color = new Color(0.5f, 0.5f, 0.5f, transparency);
             GetComponentInChildren<Image>().raycastTarget = isActive;
-
-            transform.SetParent(transform.parent.parent);
         }
     }
 }

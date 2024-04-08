@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4044601865156458201}
   - component: {fileID: 1705812441695961530}
   - component: {fileID: 8994583535622541764}
+  - component: {fileID: 524705234998380761}
   m_Layer: 7
   m_Name: Meat
   m_TagString: Untagged
@@ -171,3 +172,30 @@ PolygonCollider2D:
       - {x: 0.56, y: -0.51}
       - {x: 0.62, y: -0.5}
   m_UseDelaunayMesh: 0
+--- !u!50 &524705234998380761
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7436557629516394883}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 2

@@ -17,6 +17,7 @@ namespace ScriptsInventory
             get { return _isEmpty; }
             set { _isEmpty = value; }
         }
+
         public ItemScriptableObject Item
         {
             get { return _item; }
@@ -43,7 +44,7 @@ namespace ScriptsInventory
 
         private void Awake()
         {
-            _icon = gameObject.transform.GetChild(0).GetChild(0).GetComponent<Image>();
+            _icon = transform.GetChild(0).GetChild(0).GetComponent<Image>();
             _itemAmountText = transform.GetChild(0).GetChild(1).GetComponent<TextMeshProUGUI>();
         }
 

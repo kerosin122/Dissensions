@@ -19,4 +19,4 @@ namespace ScriptsInventory
         [SerializeField] private GameObject _prefabItem;
         [SerializeField] private Sprite _icon;
     }
-}
+}   
