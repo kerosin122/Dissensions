@@ -75,7 +75,6 @@ namespace ScriptsInventory
             int amount = newSlot.Amount;
             bool isEmpty = newSlot.IsEmpty;
             Image icon = newSlot.Icon;
-            TextMeshProUGUI amountText = newSlot.ItemAmountText;
 
             newSlot.Item = _inventorySlot.Item;
             newSlot.Amount = _inventorySlot.Amount;
@@ -100,7 +99,7 @@ namespace ScriptsInventory
 
             if (isEmpty == false)
             {
-                _inventorySlot.SetIcon(icon.GetComponent<Image>().sprite);
+                _inventorySlot.SetIcon(item.Icon);
                 _inventorySlot.ItemAmountText.text = amount.ToString();
             }
 

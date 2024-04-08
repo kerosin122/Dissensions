@@ -8,6 +8,8 @@ TagManager:
   - BackgroundInventoryPanel
   - DropPanel
   - UIPanel
+  - Apple
+  - Meat
   layers:
   - Default
   - TransparentFX
