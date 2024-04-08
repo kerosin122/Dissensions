@@ -2,48 +2,38 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using ScriptsInventory;
-using System.Collections;
 
 namespace ScriptsPlayer
 {
+    [RequireComponent(typeof(Animator))]
     public class SelectionSubjects : MonoBehaviour
     {
         private readonly int AppearancePanel = Animator.StringToHash(nameof(AppearancePanel));
 
-        private const float TimeDisappearText = 1f;
-
+        [SerializeField] private Animator _animator;
         [SerializeField] private Image _iconProduct;
         [SerializeField] private TextMeshProUGUI _hintText;
         [SerializeField] private InventoryPanel _inventoryPanel;
 
-        [SerializeField] private Animator _animator;
-
         private void OnCollisionEnter2D(Collision2D collision) => Lifting(collision);
 
-        private void Lifting(Collision2D collider)
+        private void Lifting(Collision2D collision)
         {
-            if (collider.gameObject.TryGetComponent(out Weapon item))
+            if (collision.gameObject.TryGetComponent(out Weapon item))
             {
-                _inventoryPanel.AddItem(collider.gameObject.GetComponent<Weapon>().Item, collider.gameObject.GetComponent<Weapon>().Amount);
-                Destroy(collider.gameObject);
-
-                _animator.SetTrigger(AppearancePanel);
+                _inventoryPanel.AddItem(collision.gameObject.GetComponent<Weapon>().Item, collision.gameObject.GetComponent<Weapon>().Amount);
+                Destroy(collision.gameObject);
 
                 DrawInformationProduct(item);
-                StartCoroutine(TransparencyWeaponText());
+
+                _animator.SetTrigger(AppearancePanel);
             }
         }
 
         private void DrawInformationProduct(Weapon item)
         {
-            _hintText.text = $"You have picked up:   {item.tag}";
+            _hintText.text = $"You have picked up:   {item.Item.NameItem}";
             _iconProduct.sprite = item.Item.Icon;
-        }
-
-        private IEnumerator TransparencyWeaponText()
-        {
-            yield return new WaitForSeconds(TimeDisappearText);
-            _hintText.text = string.Empty;
         }
     }
 }
