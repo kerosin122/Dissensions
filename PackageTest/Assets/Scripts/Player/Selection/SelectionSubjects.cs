@@ -15,7 +15,9 @@ namespace ScriptsPlayer
         [SerializeField] private Animator _animatorAddAmountItem;
         [SerializeField] private Image _iconProduct;
         [SerializeField] private TextMeshProUGUI _hintText;
-        [SerializeField] private InventoryPanel _inventoryPanel;
+
+        [SerializeField] private AddingInventory _addingInventory;      
+        
 
         private void OnCollisionEnter2D(Collision2D collision) => LiftingItem(collision);
 
@@ -23,7 +25,7 @@ namespace ScriptsPlayer
         {
             if (collision.gameObject.TryGetComponent(out Weapon item))
             {
-                _inventoryPanel.AddItem(collision.gameObject.GetComponent<Weapon>().Item, collision.gameObject.GetComponent<Weapon>().Amount);
+                _addingInventory.AddItem(collision.gameObject.GetComponent<Weapon>().Item, collision.gameObject.GetComponent<Weapon>().Amount);
 
                 Destroy(collision.gameObject);
 
