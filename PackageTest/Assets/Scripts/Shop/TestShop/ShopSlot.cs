@@ -11,9 +11,6 @@ namespace ShopSystem
         [SerializeField] protected TextMeshProUGUI _priceText;
         [Header("Items components")]
         [SerializeField] protected int _price;
-        public virtual void Purchase()
-        {
-
-        }
+        public abstract void Purchase();
     }
 }

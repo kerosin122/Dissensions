@@ -89,22 +89,6 @@ public class GameShopSystemManager : MonoBehaviour
         }
         return transactionConfirmation;
     }
-    public bool PurchaseMilitary(Military solder, out bool transactionConfirmation)
-    {
-        if (_gold >= solder.Cost)
-        {
-            _gold -= solder.Cost;
-            // добавляем в инвентарь
-            transactionConfirmation = true;
-        }
-        else
-        {
-            Debug.Log("Недостаточно средств");
-            transactionConfirmation = false;
-        }
-        GoldUpdate();
-        return transactionConfirmation;
-    }
     #region Items department
     private IEnumerator UpdateItemTimer()
     {
@@ -165,8 +149,5 @@ public class GameShopSystemManager : MonoBehaviour
         }
         return result;
     }
-    #endregion
-    #region Military department
-
     #endregion
 }

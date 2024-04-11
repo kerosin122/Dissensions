@@ -8,7 +8,7 @@ namespace ShopSystem
     {
         [SerializeField] private ItemScriptableObject _item;
         [SerializeField] private int _count;
-        [SerializeField] private Image _image;
+        private Image _image;
         private bool _transactionConfirmation;
 
         private void Start()
@@ -29,7 +29,7 @@ namespace ShopSystem
             else
             {
 
-            } 
+            }
         }
         public void ClearItem()
         {
