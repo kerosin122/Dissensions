@@ -24,5 +24,7 @@ namespace ScriptsAudio
             float volume = slider.value;
             _audioMixer.SetFloat(audio.name, volume);
         }
+
+
     }
 }
