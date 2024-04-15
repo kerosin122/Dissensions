@@ -7,7 +7,11 @@ namespace ScriptsPlayer
     {
         [SerializeField] private PlayerInputMovement _inputMovement;
 
-        public bool IsMoving => _isMoving;
+        public bool IsMoving
+        {
+            get { return _isMoving; }
+            set { _isMoving = value; }
+        }
 
         [SerializeField, Range(1f, 5f)] private float _speedWalking = 1f;
 
