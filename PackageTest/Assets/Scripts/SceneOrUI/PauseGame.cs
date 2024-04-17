@@ -1,9 +1,11 @@
+using ScriptsUI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PauseGame : MonoBehaviour
 {
     [SerializeField] private GameObject _pausePanel;
+    [SerializeField] private AnimationPanels _animationPanels;
 
     private bool _isPaused = false;
 
@@ -12,20 +14,19 @@ public class PauseGame : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (!_isPaused)
-                IsOpenPanelPause(true);
+            {
+                _animationPanels.OpenPanel();
+                _isPaused = true;
+            }
 
             else
-                IsOpenPanelPause(false);
+            {
+                _animationPanels.HidePanel();
+                _isPaused = false;
+            }
         }
 
         IsExitGame();
-    }
-
-    private void IsOpenPanelPause(bool isActivePanel)
-    {
-        Time.timeScale = isActivePanel ? 0f : 1f;
-        _isPaused = isActivePanel;
-        _pausePanel.SetActive(isActivePanel);
     }
 
     private void IsExitGame()
