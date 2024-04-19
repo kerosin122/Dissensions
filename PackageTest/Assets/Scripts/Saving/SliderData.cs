@@ -2,18 +2,18 @@ using UnityEngine;
 
 public class SliderData
 {
-    [SerializeField] private float slider1Value;
-    [SerializeField] private float slider2Value;
+    [SerializeField] private float _sliderMusic;
+    [SerializeField] private float _sliderSound;
 
-    public float Slider1Value
+    public float SliderMusic
     {
-        get { return slider1Value; }
-        set { slider1Value = value; }
+        get { return _sliderMusic; }
+        set { _sliderMusic = value; }
     }
 
-    public float Slider2Value
+    public float SliderSounds
     {
-        get { return slider2Value; }
-        set { slider2Value = value; }
+        get { return _sliderSound; }
+        set { _sliderSound = value; }
     }
 }

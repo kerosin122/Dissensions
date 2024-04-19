@@ -28,15 +28,13 @@ public class SavePrefabs : MonoBehaviour
     {
         SliderData data = new SliderData();
 
-        data.Slider1Value = _soundSlider.value;
-        data.Slider2Value = _musicSlider.value;
+        data.SliderSounds = _soundSlider.value;
+        data.SliderMusic = _musicSlider.value;
 
         XmlSerializer serializer = new XmlSerializer(typeof(SliderData));
 
         using (FileStream stream = new FileStream(_filePath, FileMode.Create))
-        {
             serializer.Serialize(stream, data);
-        }
     }
 
     private void LoadSliders()
@@ -48,8 +46,8 @@ public class SavePrefabs : MonoBehaviour
             using (FileStream stream = new FileStream(_filePath, FileMode.Open))
             {
                 SliderData data = (SliderData)serializer.Deserialize(stream);
-                _soundSlider.value = data.Slider1Value;
-                _musicSlider.value = data.Slider2Value;
+                _soundSlider.value = data.SliderSounds;
+                _musicSlider.value = data.SliderMusic;
             }
         }
     }
