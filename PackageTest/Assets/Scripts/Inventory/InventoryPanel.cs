@@ -1,12 +1,14 @@
-﻿using UnityEngine;
+﻿using ScriptsUI;
+using UnityEngine;
 
 namespace ScriptsInventory
 {
     public class InventoryPanel : MonoBehaviour
     {
         [SerializeField] private GameObject _inventoryPanel;
+        [SerializeField] private AnimationPanels _animationPanels;
 
-        private bool _isOpenInventoryPanel;
+        private bool _isOpenInventoryPanel = false;
 
         private void Awake() => _inventoryPanel.SetActive(true);
 
@@ -16,9 +18,18 @@ namespace ScriptsInventory
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                _isOpenInventoryPanel = !_isOpenInventoryPanel;
-                _inventoryPanel.SetActive(_isOpenInventoryPanel);
+                if (!_isOpenInventoryPanel)
+                {
+                    _animationPanels.OpenPanel();
+                    _isOpenInventoryPanel = true;
+                }
+
+                else
+                {
+                    _animationPanels.HidePanel();
+                    _isOpenInventoryPanel = false;
+                }
             }
-        }
+        }   
     }
-}
+}   

@@ -18,6 +18,7 @@ namespace ScriptsInventory
             }
 
             _inventoryPanel.SetActive(false);
+            _inventoryTransformPanel.gameObject.SetActive(false);
         }
 
         public void AddItem(ItemScriptableObject item, int amount)

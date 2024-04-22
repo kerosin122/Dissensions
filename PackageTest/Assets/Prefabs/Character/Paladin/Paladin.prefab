@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inputMovement: {fileID: 920417828850888916}
-  _speedWalking: 3.05
+  _speedWalking: 3
 --- !u!114 &920417828850888916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,8 +240,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f441370c498386f4a883dd5f98188a83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 100
-  _mana: 75
   _gold: 10
   _characteristicsText: {fileID: 0}
 --- !u!114 &4251499699485730569
@@ -256,7 +254,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66034dadde4138f489b53471acc672e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animatorInformationProduct: {fileID: 0}
+  _animatorAddAmountItem: {fileID: 0}
   _iconProduct: {fileID: 0}
   _hintText: {fileID: 0}
-  _inventoryPanel: {fileID: 0}
-  _animator: {fileID: 0}
+  _addingInventory: {fileID: 0}
