@@ -44,7 +44,7 @@ namespace ScriptsInventory
                 transform.position = _inventorySlot.transform.position;
             }
 
-            if (eventData.pointerCurrentRaycast.gameObject.CompareTag("BackgroundInventoryPanel"))
+            if (eventData.pointerCurrentRaycast.gameObject.CompareTag("ClearSlotIneventory"))
             {
                 GameObject item = Instantiate(_inventorySlot.Item.PrefabItem, _player.position + Vector3.down + _player.right, Quaternion.identity);
                 item.GetComponent<Weapon>().Amount = _inventorySlot.Amount;
