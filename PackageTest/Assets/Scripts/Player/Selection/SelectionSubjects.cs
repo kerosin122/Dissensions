@@ -2,51 +2,43 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using ScriptsInventory;
-using System.Collections;
 
 namespace ScriptsPlayer
 {
+    [RequireComponent(typeof(Animator))]
     public class SelectionSubjects : MonoBehaviour
     {
         private readonly int AppearancePanel = Animator.StringToHash(nameof(AppearancePanel));
+        private readonly int AppearanceAmountItem = Animator.StringToHash(nameof(AppearanceAmountItem));
 
-        private const float TimeDisappearText = 1f;
-
-        [SerializeField] private TextMeshProUGUI _hintText;
-        [SerializeField] private InventoryPanel _inventoryPanel;
+        [SerializeField] private Animator _animatorInformationProduct;
+        [SerializeField] private Animator _animatorAddAmountItem;
         [SerializeField] private Image _iconProduct;
+        [SerializeField] private TextMeshProUGUI _hintText;
 
-        [SerializeField] private Animator _animator;
+        [SerializeField] private AddingInventory _addingInventory;      
+        
 
-        private void OnCollisionStay2D(Collision2D collision) => Lifting(collision);
+        private void OnCollisionEnter2D(Collision2D collision) => LiftingItem(collision);
 
-        private void Lifting(Collision2D collider)
+        private void LiftingItem(Collision2D collision)
         {
-            if (Input.GetKeyDown(KeyCode.F))
+            if (collision.gameObject.TryGetComponent(out Weapon item))
             {
-                if (collider.gameObject.TryGetComponent(out Weapon item))
-                {
-                    _inventoryPanel.AddItem(collider.gameObject.GetComponent<Weapon>().Item, collider.gameObject.GetComponent<Weapon>().Amount);
-                    Destroy(collider.gameObject);
+                _addingInventory.AddItem(collision.gameObject.GetComponent<Weapon>().Item, collision.gameObject.GetComponent<Weapon>().Amount);
 
-                    _animator.SetTrigger(AppearancePanel);
+                Destroy(collision.gameObject);
 
-                    DrawInformationProduct(item); 
-                    StartCoroutine(TransparencyWeaponText());
-                }
+                DrawInformationProduct(item);
+                _animatorInformationProduct.SetTrigger(AppearancePanel);
+                _animatorAddAmountItem.SetTrigger(AppearanceAmountItem);
             }
         }
 
         private void DrawInformationProduct(Weapon item)
         {
-            _hintText.text = $"You have picked up:   {item.name}";
             _iconProduct.sprite = item.Item.Icon;
-        }
-
-        private IEnumerator TransparencyWeaponText()
-        {
-            yield return new WaitForSeconds(TimeDisappearText);
-            _hintText.text = string.Empty;
+            _hintText.text = $"You have picked up:   {item.Item.NameItem}";
         }
     }
 }

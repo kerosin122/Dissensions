@@ -1,0 +1,4054 @@
+fileFormatVersion: 2
+guid: d5901fde7f88ba140af1ad64985c1a55
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_0
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 888
+        width: 251
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 392116155d9333d4eba676a6fbde3388
+      internalID: -365576821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_1
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 885
+        width: 250
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e26fe0179aaec54382c9c22d4256858
+      internalID: -910466438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_2
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 874
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c919a86166a2c334aa12d127a99ae5a1
+      internalID: -1742472686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_3
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 904
+        width: 37
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5413c59bb5fe30943b2adda733503ee1
+      internalID: 1186046494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_4
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 908
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddac1522086a9034a815192b6b2213d4
+      internalID: 2074375957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_5
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 904
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcaff7deddc0bb04bb9f560fde404628
+      internalID: 1947210608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_6
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 904
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7833e4b9b8fd75047b1d9e257328e9d0
+      internalID: -650286516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_7
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 921
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ab6b53fd2c3d448a5cfc0752a6e23a
+      internalID: -103679624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_8
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 902
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21605bcf931d134cad43782a1dd46c3
+      internalID: 834910709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_9
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 936
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6881108d973eb404fb5b1f9d1e5bfa10
+      internalID: 1167568901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_10
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 800
+        width: 17
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11411d2493a47543a18daf1d5f1da11
+      internalID: 949256645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_11
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 922
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a727b40bd46ae5f48a9b762efbfdde79
+      internalID: 94104224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_12
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 858
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6776c97db772d24a936e42e59d1f6e8
+      internalID: 2116016292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_13
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 863
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50cda83f8fc2cda40bbf1c2eb11b6575
+      internalID: 1846553418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_14
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 857
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a87a4a0d63d1034aa8b02acf785da3e
+      internalID: 578680444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_15
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 862
+        width: 7
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2a6ef12c7037c4fbfb6b716105ec8a
+      internalID: -891729908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_16
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 868
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d893d9f4505944c91378a02f5e2054
+      internalID: 69620657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_17
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 872
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b8311334ad0124c824a194258d7cae
+      internalID: 1603596639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_18
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 859
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533ee9efda184ce43b745c191e91443e
+      internalID: 1655599282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_19
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 886
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b72abf7d4849be409ec1ddb14adfd43
+      internalID: 916656761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_20
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 803
+        width: 257
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a557d7b864384a429946594acef79aa
+      internalID: 1701216133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_21
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 804
+        width: 254
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab67fdf6b4275e4fbe5caecd3862d91
+      internalID: 1206536313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_22
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 869
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a5f84e3abb77254ea72eaab4416b9a8
+      internalID: 1399699629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_23
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 850
+        width: 65
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853a9e9fd94e42b4b8894978998faaec
+      internalID: 1851158843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_24
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 863
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9bf46cbc83cb5244aaa07fe962d92e0
+      internalID: -1527780706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_25
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 800
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2361a533d5de17343963dc00ba2d5975
+      internalID: 1582275379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_26
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 854
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94988a1f1cfae5a418b3bd6598f610e6
+      internalID: -825194328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_27
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 812
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175386be6e021ad49849bf3ea1f8dd70
+      internalID: 2075390468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_28
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 816
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225b464bc4e613d4387f49bbfe4b7b16
+      internalID: 379810742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_29
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 811
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba42932e97f325d4eb485b02d95a7241
+      internalID: 782483453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_30
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 831
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c39f6e6eb0a28844b8b940c3a519231
+      internalID: 1103715165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_32
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 814
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71412dfc7f7a96e4989863b1ee678663
+      internalID: 1267131023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_33
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 814
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11068c4df8574ad40a04497689e764a4
+      internalID: 600885530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_38
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 801
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6700dfdfdf432ae469038bd3b2359656
+      internalID: -1332251946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_39
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 810
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2985492abb7cd7445ae4eb70d011f16b
+      internalID: 483714389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_40
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 726
+        width: 251
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0977a58067a8ab749977a19e51e2bfd2
+      internalID: 309424030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_43
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 724
+        width: 243
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20da096779dd5fb43a98336e5bb1791e
+      internalID: 259403319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_48
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 730
+        width: 66
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded426337e920be4694efccf15e2bc65
+      internalID: 1687488849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_49
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 770
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b19fafbb88080d4c8ee9173d30647bd
+      internalID: 335293295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_50
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 773
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3414bb37f93c46046aec6ab8bcdb39e4
+      internalID: -1761310611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_51
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 766
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90024d9ab798e04da6fb078ff955f8e
+      internalID: 1291975634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_52
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 790
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 110aac3a7a120174bb63d43dbfc63c14
+      internalID: 759250190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_53
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 771
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1931bc342401e2144b777f60028c38cc
+      internalID: 1464377947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_54
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 742
+        width: 10
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269c01fd4305f0c4faf0f56dc30fe0a6
+      internalID: 1970885817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_55
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 768
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a546615a75ed7e4ba01955ac181ca66
+      internalID: -1749513351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_56
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 779
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fcb5177c80385942b4b888c747534d1
+      internalID: -273953419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_57
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 771
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d711564251f568344a2efa470a195d69
+      internalID: -676495816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_58
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 768
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0830118e49c6d4294da76a1bbfef87
+      internalID: -1152891406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_63
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 729
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba5e6e5e4808b3f47917ded857f65b1d
+      internalID: 28721197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_64
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 694
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21deafe22b08b6d44ac57e56d19d6b30
+      internalID: -1639150543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_65
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 686
+        width: 62
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca4228ab940c354ea5bc5e83a9fc4e5
+      internalID: -1047822147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_66
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 707
+        width: 10
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c2b2fd011afb1a419c15746a75cc5c5
+      internalID: 1069571639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_67
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 708
+        width: 6
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408c5669e6c523e4282b0f6195dfa566
+      internalID: 1987751561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_69
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 726
+        width: 64
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a768edf69d09cd74fa07ad562cb2ffd8
+      internalID: 1490584322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_70
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 699
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08254c0fdde542a4e95192cad9d86582
+      internalID: 739628134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_79
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 710
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9496a96690ff690439828a78a2e60ff7
+      internalID: -1440008519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_80
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 657
+        width: 58
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e4206ba91208a408a77f1bc0aa4834
+      internalID: 1902560198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_81
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 710
+        width: 41
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5171c24f9c759054396c095b75ab0b2a
+      internalID: 1046858808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_82
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 710
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e5eafd1c221923488f008193dbb6f50
+      internalID: -1078325865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_83
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 718
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd82060c57b29d4f876f3e9c824647c
+      internalID: 489104826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_84
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 645
+        width: 251
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9664df568cfc8c04ca7ce00cea00957f
+      internalID: 1079180159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_85
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 646
+        width: 251
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067d7de88a2bde6478fa8c7f9ca6ae72
+      internalID: -70076118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_86
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 703
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc1cb8f1e10baf4481b6af2392df2c1
+      internalID: 1377148511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_87
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 703
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1477fc95b517149a0a7285db3c2cad
+      internalID: -1790876652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_88
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 698
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d6e6d670b580a439c979429fa4359a
+      internalID: 1028357129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_89
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 696
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6be14b0366d424c97a81c4471bebea
+      internalID: -863893789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_90
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 693
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1567348701274428737c6cf55464c1
+      internalID: -748055305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_91
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 694
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7721cf1dd66565439f8b167aa4c921c
+      internalID: 138674646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_92
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 696
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39407e3318d801042970c52713e2ea86
+      internalID: 846283853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_93
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 653
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd5897b47e81f348928e13768c1b830
+      internalID: 80753929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_94
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 660
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9829b4549d1199548a6cec93c58b8cc1
+      internalID: -1018661288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_95
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 653
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a505e824c6c6e4ea256c09ff7e668b
+      internalID: 686654200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_96
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 654
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e67dba1e1b820409742a47cd5422ec
+      internalID: -449901493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_97
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 654
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e0f935f368d6c04cac9d672548da837
+      internalID: 1683804862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_98
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 654
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b599e63fd92491d4fb31bcfb2cb7516d
+      internalID: -224280413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_99
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 658
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeea9dc560e009f41a68f3f93fffbe90
+      internalID: -1159298610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_100
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 661
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fbab0c6e2bca144b99a5ef165b57f14
+      internalID: -1967959981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_101
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 660
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7245f080ceaa134987ba60ce08f3c54
+      internalID: -10505931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_102
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 660
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acbceef1fa6b7d54dac809fb90527b0b
+      internalID: 1134909917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_103
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 659
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e753c7136d0d574ebee307e7e47db96
+      internalID: 607166010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_108
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 649
+        width: 63
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bcd74c29980d3b4a81c584c106e1446
+      internalID: -1961359278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_109
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 541
+        width: 169
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caabfe17331dadc4faa7c06d0e5b0ea0
+      internalID: -893196644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_110
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 541
+        width: 169
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d09e5e3a066104bb531d1facb26e29
+      internalID: -1592216619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_113
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 518
+        width: 87
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8131d54c7935e439ea7e8bf02f35cf
+      internalID: 1533263723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_114
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 583
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f01b6a07e97ffb49ba4d6ffbe1a8d6a
+      internalID: -165371839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_115
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 583
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f4feced09ddd147acb3cd744dc1350
+      internalID: 690021234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_116
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 583
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac067b603b489a243919c754d8208d8f
+      internalID: 1065171163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_117
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 583
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc26ba4692b883449077d0d36bb7a29
+      internalID: -525671894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_118
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 585
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c31066496c065f40821cde822caf91b
+      internalID: 1194422535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_119
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 583
+        width: 41
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3b3d0f260d53df4381df2c76f27afbb
+      internalID: 209582769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_120
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 583
+        width: 39
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f033a82022f74d9439d7e860658a68d0
+      internalID: -252586064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_121
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 581
+        width: 37
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f6941bc939da0408caac6b5ca7ea50
+      internalID: 781282687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_122
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 579
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d7d1513a689bd499d11be336791780
+      internalID: 55742757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_123
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 581
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 932261bde417ba546ad2f33a13aeab32
+      internalID: -1767027772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_126
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 532
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdb43c0d7fb06454daabffa0477248eb
+      internalID: -1629288239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_127
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 532
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17dece1f8786e74ba1ff0545ff5257b
+      internalID: 862786847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_130
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 531
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5525b941f32adc141acd17560aaa9f99
+      internalID: 544328043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_131
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 532
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a8b2d7aaf1dbfb43acb5ffa07e7a41b
+      internalID: 603916033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_132
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 535
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09df985dc6d592244b5a6d1a41de75ac
+      internalID: 1643958604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_133
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 533
+        width: 41
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876d66f5c67f00d43afcfd4b1b2868d2
+      internalID: 1479717290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_134
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 533
+        width: 39
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 892880d08e711364c8e5c3755e59a4da
+      internalID: 1048960009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_135
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 529
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc5520a2eaaee34ea8991c4d69cd79a
+      internalID: 1645396874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_136
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 529
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b1c2787859e40e4998dab2e48b2128d
+      internalID: -639133422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_137
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 529
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb466158a0195746adb8e5aefb7990e
+      internalID: 557506431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_140
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 473
+        width: 169
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab95cadff3c44642bef6d034ce01bd7
+      internalID: 648693921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_143
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 473
+        width: 168
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb485fa6d42c4e4384a5000de7afe3c
+      internalID: -90343845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_144
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 479
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1624dcf9d153fd345a4c22a660b27100
+      internalID: -1717818985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_145
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 479
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7be2f25fa33e24f82f0cd3f2ec59d9
+      internalID: 68381737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_146
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 478
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9301ba51e28904291ca9aa4415391a
+      internalID: -1665935391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_147
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 479
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3032eb34b3dea2b4d919c52864e21038
+      internalID: 258804603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_148
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 485
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf286189517d01740aaa2f19635844f3
+      internalID: 788575660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_149
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 483
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acd296fa6c7557149abbdb43ecded54f
+      internalID: -1751976137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_150
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 476
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f7551851ac02149b6a94a810ae61df
+      internalID: 730193851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_151
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 480
+        width: 37
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e4e6cd3ace9de4692efe3359e22c37
+      internalID: -127446630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_155
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 428
+        width: 81
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b51e2d0bd459c944b54f3a856093b99
+      internalID: -1862027334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_156
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 480
+        width: 41
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b772b15917bc9a4d82ed6b326a5fa31
+      internalID: 1256467228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_157
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 480
+        width: 39
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90e8bd0915f55b4086e4a987f93bb78
+      internalID: -1576398569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_158
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 476
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41fb76f464ff82d43b84210ac12288e6
+      internalID: 412386889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_159
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 476
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f07a8a362e10a94f99e75778ab587d5
+      internalID: -716623155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_160
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 467
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6358d83ebe181b44593d7a1f791fec70
+      internalID: -472648221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_165
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 437
+        width: 6
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f95c744e3ae3d14687f9d5f0d4e0104
+      internalID: -314885154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_166
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 423
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deea4424772ae5e4c85c2d431f884661
+      internalID: 455653779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_167
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 444
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 868b0583d8a22eb4386a66920c81db32
+      internalID: 397763034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_168
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 454
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360257e476d849b469360281a25f458f
+      internalID: -968418220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_169
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 452
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896cafecda93f8e4b9e7cd9745126205
+      internalID: 667301078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_170
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 423
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f834824d242a73d4892c929b676edfc2
+      internalID: -1420006041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_171
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 442
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 200b9baa39f71d841befb24df35213c1
+      internalID: 1758838987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_172
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 445
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9c4b3ba6e3e7648a8e0a62823e7540
+      internalID: 49011283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_173
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 429
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec7a8b255b8fef47a421d1943290e4e
+      internalID: -646070095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_174
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 427
+        width: 41
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480615544759c484c883b60c40223d68
+      internalID: 957190616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_175
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 427
+        width: 39
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5aee4ca97887f41a1133db66252eb4
+      internalID: -1610171115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_176
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 422
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce9e2375a843274498cfbd58d89fcc3
+      internalID: -97467327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_177
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 422
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058ed17305de032439e04e76161433fc
+      internalID: -1881144234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_178
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 452
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55aa21d01cf7c2e48a776d818a4f7f33
+      internalID: -859469904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_179
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 444
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb84fd7125e51d4d94130ecfaad6710
+      internalID: 761231054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_180
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 399
+        width: 166
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4eaa1a30cd10444a48e95c13967c9f
+      internalID: -815177188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_182
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 400
+        width: 166
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dabf4292c34c5c4085ddfab256ed9bc
+      internalID: -275150930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_183
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 436
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702dc6a98180c244680212cca4a42bdf
+      internalID: -1849793369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_184
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 440
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 622e7aaf80c713748b4a4e7ddb6982cd
+      internalID: 79019171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_185
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 445
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d9438288643c542a433919767bbfbd
+      internalID: 697339194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_186
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 432
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283a3cc2867588643b82c833e792b4bd
+      internalID: -313893541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_187
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 434
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe89a87b3af47914ea33a25ed691e45a
+      internalID: -844665157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_188
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 422
+        width: 39
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5f312709cbc5a49968c0f04672dc5a
+      internalID: -1241441550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_189
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 421
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e84ee958afd12343a075b51e40a1878
+      internalID: 1932987305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_190
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 426
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be26ca33b41a56438dfbe6f5c6afbba
+      internalID: -727573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_191
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 427
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ee81b8d369dbe4baa9134d7287ddb5
+      internalID: -26439568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_192
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 423
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc9528b299d93347b0db7bdf12e73c5
+      internalID: -1402749919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_193
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 432
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de7607bc5b487294a926cc6370b288e4
+      internalID: -1028215143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_194
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 423
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6aa39958089cd84cbf51a5ff17f12d3
+      internalID: -1574847385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_195
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 423
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91ee00de17e3b340aebd31cafd6cf17
+      internalID: -476147697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_196
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 426
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b2b3ae6d725bc4ab8c7d1f4b9e665d
+      internalID: 173234552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_197
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 423
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b80cf76c9f2fb543a5838b0fad068c4
+      internalID: 1510094826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_198
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 423
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c45ac3623df4848a4063d2e33e26cf
+      internalID: -1406341404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_201
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 381
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae5ac73bb876aa04e917db122711f77f
+      internalID: -1751726531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_202
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 406
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61513b143d807844f91f6ea832ea851c
+      internalID: 217526749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_203
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 397
+        width: 257
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1761d7bedcb387b44b4df84d747e1a85
+      internalID: -855876109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_210
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 330
+        width: 165
+        height: 59
+      alignment: 9
+      pivot: {x: 0.52706087, y: 0.5214662}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe8e341225e3aa4faaf60335c8f4daf
+      internalID: 1296036407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_215
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 332
+        width: 161
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efbc14370e05b884eb2ec6d0315beae7
+      internalID: 2072632867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_219
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 343
+        width: 220
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a89aa6e635c9de2488ec2c0246692ad2
+      internalID: 581548277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_221
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 356
+        width: 238
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda75abaa9ce48d4592b3c3ac54832f2
+      internalID: 1413831158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_222
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 332
+        width: 237
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2756bd921727bdb46b4c41459570aee7
+      internalID: 2110990956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_227
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 270
+        width: 231
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd78c09eb608f1f498078e25c71c60bb
+      internalID: 2117564694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_228
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 218
+        width: 113
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d59c16917f992e45af1a6dbceb2eaee
+      internalID: 875570146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_229
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 156
+        width: 138
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4edfc7f5b4970384f856e3f69295dcdd
+      internalID: 1130051205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_230
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 163
+        width: 148
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd225e12c72626b4daf487e87fc9a05d
+      internalID: 981400558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_231
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 163
+        width: 153
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 279beba0752fd584c8c1f965fb4298cb
+      internalID: 1144627534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_232
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 122
+        width: 291
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6bbfeb66515ab43a9c900a324a72d5
+      internalID: 2101238232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_234
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 130
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef7a4fe8931caa4b9e3efb35c85fffb
+      internalID: 1452144592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_235
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 128
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e15bb73124ec84aa351c76afd5f1f9
+      internalID: 1180510959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_237
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 128
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b7862851158c2469bf41da2a3c6c08
+      internalID: 1409749848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_238
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 127
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e6e7773b34d0e4c8c62da6525e70ef
+      internalID: 197641937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_239
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 121
+        width: 452
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d594498c60e3ba478c607e208085db7
+      internalID: -992102871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_240
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 103
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 281b0c8642cea7443afbd801063b5c50
+      internalID: 885858721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_241
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 101
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f8e7c1c41d30254d84061138289d25c
+      internalID: -1393808719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_242
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 104
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51ce94c6b2bf85f43bff36367bac9aec
+      internalID: -1943423494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryUIDarkFantazy_243
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 100
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef779863272642245bc6d1cc32b47bb9
+      internalID: 1439319518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      InventoryUIDarkFantazy_0: -365576821
+      InventoryUIDarkFantazy_1: -910466438
+      InventoryUIDarkFantazy_10: 949256645
+      InventoryUIDarkFantazy_100: -1967959981
+      InventoryUIDarkFantazy_101: -10505931
+      InventoryUIDarkFantazy_102: 1134909917
+      InventoryUIDarkFantazy_103: 607166010
+      InventoryUIDarkFantazy_104: -1822667215
+      InventoryUIDarkFantazy_105: -2142765815
+      InventoryUIDarkFantazy_106: 487732055
+      InventoryUIDarkFantazy_107: -456137942
+      InventoryUIDarkFantazy_108: -1961359278
+      InventoryUIDarkFantazy_109: -893196644
+      InventoryUIDarkFantazy_11: 94104224
+      InventoryUIDarkFantazy_110: -1592216619
+      InventoryUIDarkFantazy_111: -583639424
+      InventoryUIDarkFantazy_112: -992837881
+      InventoryUIDarkFantazy_113: 1533263723
+      InventoryUIDarkFantazy_114: -165371839
+      InventoryUIDarkFantazy_115: 690021234
+      InventoryUIDarkFantazy_116: 1065171163
+      InventoryUIDarkFantazy_117: -525671894
+      InventoryUIDarkFantazy_118: 1194422535
+      InventoryUIDarkFantazy_119: 209582769
+      InventoryUIDarkFantazy_12: 2116016292
+      InventoryUIDarkFantazy_120: -252586064
+      InventoryUIDarkFantazy_121: 781282687
+      InventoryUIDarkFantazy_122: 55742757
+      InventoryUIDarkFantazy_123: -1767027772
+      InventoryUIDarkFantazy_124: -689951468
+      InventoryUIDarkFantazy_125: -462857566
+      InventoryUIDarkFantazy_126: -1629288239
+      InventoryUIDarkFantazy_127: 862786847
+      InventoryUIDarkFantazy_128: -1023864428
+      InventoryUIDarkFantazy_129: 1217204279
+      InventoryUIDarkFantazy_13: 1846553418
+      InventoryUIDarkFantazy_130: 544328043
+      InventoryUIDarkFantazy_131: 603916033
+      InventoryUIDarkFantazy_132: 1643958604
+      InventoryUIDarkFantazy_133: 1479717290
+      InventoryUIDarkFantazy_134: 1048960009
+      InventoryUIDarkFantazy_135: 1645396874
+      InventoryUIDarkFantazy_136: -639133422
+      InventoryUIDarkFantazy_137: 557506431
+      InventoryUIDarkFantazy_138: 693154634
+      InventoryUIDarkFantazy_139: -1191136036
+      InventoryUIDarkFantazy_14: 578680444
+      InventoryUIDarkFantazy_140: 648693921
+      InventoryUIDarkFantazy_141: -1490939501
+      InventoryUIDarkFantazy_142: -1963251282
+      InventoryUIDarkFantazy_143: -90343845
+      InventoryUIDarkFantazy_144: -1717818985
+      InventoryUIDarkFantazy_145: 68381737
+      InventoryUIDarkFantazy_146: -1665935391
+      InventoryUIDarkFantazy_147: 258804603
+      InventoryUIDarkFantazy_148: 788575660
+      InventoryUIDarkFantazy_149: -1751976137
+      InventoryUIDarkFantazy_15: -891729908
+      InventoryUIDarkFantazy_150: 730193851
+      InventoryUIDarkFantazy_151: -127446630
+      InventoryUIDarkFantazy_152: 734139465
+      InventoryUIDarkFantazy_153: 1744209253
+      InventoryUIDarkFantazy_154: -451161716
+      InventoryUIDarkFantazy_155: -1862027334
+      InventoryUIDarkFantazy_156: 1256467228
+      InventoryUIDarkFantazy_157: -1576398569
+      InventoryUIDarkFantazy_158: 412386889
+      InventoryUIDarkFantazy_159: -716623155
+      InventoryUIDarkFantazy_16: 69620657
+      InventoryUIDarkFantazy_160: -472648221
+      InventoryUIDarkFantazy_161: -441039323
+      InventoryUIDarkFantazy_162: 89422919
+      InventoryUIDarkFantazy_163: 1049422614
+      InventoryUIDarkFantazy_164: -71551448
+      InventoryUIDarkFantazy_165: -314885154
+      InventoryUIDarkFantazy_166: 455653779
+      InventoryUIDarkFantazy_167: 397763034
+      InventoryUIDarkFantazy_168: -968418220
+      InventoryUIDarkFantazy_169: 667301078
+      InventoryUIDarkFantazy_17: 1603596639
+      InventoryUIDarkFantazy_170: -1420006041
+      InventoryUIDarkFantazy_171: 1758838987
+      InventoryUIDarkFantazy_172: 49011283
+      InventoryUIDarkFantazy_173: -646070095
+      InventoryUIDarkFantazy_174: 957190616
+      InventoryUIDarkFantazy_175: -1610171115
+      InventoryUIDarkFantazy_176: -97467327
+      InventoryUIDarkFantazy_177: -1881144234
+      InventoryUIDarkFantazy_178: -859469904
+      InventoryUIDarkFantazy_179: 761231054
+      InventoryUIDarkFantazy_18: 1655599282
+      InventoryUIDarkFantazy_180: -815177188
+      InventoryUIDarkFantazy_181: -1858914219
+      InventoryUIDarkFantazy_182: -275150930
+      InventoryUIDarkFantazy_183: -1849793369
+      InventoryUIDarkFantazy_184: 79019171
+      InventoryUIDarkFantazy_185: 697339194
+      InventoryUIDarkFantazy_186: -313893541
+      InventoryUIDarkFantazy_187: -844665157
+      InventoryUIDarkFantazy_188: -1241441550
+      InventoryUIDarkFantazy_189: 1932987305
+      InventoryUIDarkFantazy_19: 916656761
+      InventoryUIDarkFantazy_190: -727573
+      InventoryUIDarkFantazy_191: -26439568
+      InventoryUIDarkFantazy_192: -1402749919
+      InventoryUIDarkFantazy_193: -1028215143
+      InventoryUIDarkFantazy_194: -1574847385
+      InventoryUIDarkFantazy_195: -476147697
+      InventoryUIDarkFantazy_196: 173234552
+      InventoryUIDarkFantazy_197: 1510094826
+      InventoryUIDarkFantazy_198: -1406341404
+      InventoryUIDarkFantazy_199: -1789636265
+      InventoryUIDarkFantazy_2: -1742472686
+      InventoryUIDarkFantazy_20: 1701216133
+      InventoryUIDarkFantazy_200: -133917300
+      InventoryUIDarkFantazy_201: -1751726531
+      InventoryUIDarkFantazy_202: 217526749
+      InventoryUIDarkFantazy_203: -855876109
+      InventoryUIDarkFantazy_204: -1699790796
+      InventoryUIDarkFantazy_205: -1294146987
+      InventoryUIDarkFantazy_206: -1123664787
+      InventoryUIDarkFantazy_207: 1050383736
+      InventoryUIDarkFantazy_208: -739721489
+      InventoryUIDarkFantazy_209: -1575871532
+      InventoryUIDarkFantazy_21: 1206536313
+      InventoryUIDarkFantazy_210: 1296036407
+      InventoryUIDarkFantazy_211: -1631819617
+      InventoryUIDarkFantazy_212: -1353292711
+      InventoryUIDarkFantazy_213: 1958781603
+      InventoryUIDarkFantazy_214: 903738314
+      InventoryUIDarkFantazy_215: 2072632867
+      InventoryUIDarkFantazy_216: -185454360
+      InventoryUIDarkFantazy_217: 1921529267
+      InventoryUIDarkFantazy_218: -1647537120
+      InventoryUIDarkFantazy_219: 581548277
+      InventoryUIDarkFantazy_22: 1399699629
+      InventoryUIDarkFantazy_220: 585375895
+      InventoryUIDarkFantazy_221: 1413831158
+      InventoryUIDarkFantazy_222: 2110990956
+      InventoryUIDarkFantazy_223: 1050085745
+      InventoryUIDarkFantazy_224: -291829319
+      InventoryUIDarkFantazy_225: -420635303
+      InventoryUIDarkFantazy_226: 1272929706
+      InventoryUIDarkFantazy_227: 2117564694
+      InventoryUIDarkFantazy_228: 875570146
+      InventoryUIDarkFantazy_229: 1130051205
+      InventoryUIDarkFantazy_23: 1851158843
+      InventoryUIDarkFantazy_230: 981400558
+      InventoryUIDarkFantazy_231: 1144627534
+      InventoryUIDarkFantazy_232: 2101238232
+      InventoryUIDarkFantazy_233: 922064120
+      InventoryUIDarkFantazy_234: 1452144592
+      InventoryUIDarkFantazy_235: 1180510959
+      InventoryUIDarkFantazy_236: 2048995629
+      InventoryUIDarkFantazy_237: 1409749848
+      InventoryUIDarkFantazy_238: 197641937
+      InventoryUIDarkFantazy_239: -992102871
+      InventoryUIDarkFantazy_24: -1527780706
+      InventoryUIDarkFantazy_240: 885858721
+      InventoryUIDarkFantazy_241: -1393808719
+      InventoryUIDarkFantazy_242: -1943423494
+      InventoryUIDarkFantazy_243: 1439319518
+      InventoryUIDarkFantazy_25: 1582275379
+      InventoryUIDarkFantazy_26: -825194328
+      InventoryUIDarkFantazy_27: 2075390468
+      InventoryUIDarkFantazy_28: 379810742
+      InventoryUIDarkFantazy_29: 782483453
+      InventoryUIDarkFantazy_3: 1186046494
+      InventoryUIDarkFantazy_30: 1103715165
+      InventoryUIDarkFantazy_31: 1555773680
+      InventoryUIDarkFantazy_32: 1267131023
+      InventoryUIDarkFantazy_33: 600885530
+      InventoryUIDarkFantazy_34: 653105129
+      InventoryUIDarkFantazy_35: -1344518574
+      InventoryUIDarkFantazy_36: 1995727780
+      InventoryUIDarkFantazy_37: -1458231984
+      InventoryUIDarkFantazy_38: -1332251946
+      InventoryUIDarkFantazy_39: 483714389
+      InventoryUIDarkFantazy_4: 2074375957
+      InventoryUIDarkFantazy_40: 309424030
+      InventoryUIDarkFantazy_41: 237464120
+      InventoryUIDarkFantazy_42: -972883384
+      InventoryUIDarkFantazy_43: 259403319
+      InventoryUIDarkFantazy_44: -1436072656
+      InventoryUIDarkFantazy_45: 2003350927
+      InventoryUIDarkFantazy_46: -1081578255
+      InventoryUIDarkFantazy_47: -339273345
+      InventoryUIDarkFantazy_48: 1687488849
+      InventoryUIDarkFantazy_49: 335293295
+      InventoryUIDarkFantazy_5: 1947210608
+      InventoryUIDarkFantazy_50: -1761310611
+      InventoryUIDarkFantazy_51: 1291975634
+      InventoryUIDarkFantazy_52: 759250190
+      InventoryUIDarkFantazy_53: 1464377947
+      InventoryUIDarkFantazy_54: 1970885817
+      InventoryUIDarkFantazy_55: -1749513351
+      InventoryUIDarkFantazy_56: -273953419
+      InventoryUIDarkFantazy_57: -676495816
+      InventoryUIDarkFantazy_58: -1152891406
+      InventoryUIDarkFantazy_59: -2122974044
+      InventoryUIDarkFantazy_6: -650286516
+      InventoryUIDarkFantazy_60: -1533292399
+      InventoryUIDarkFantazy_61: 4594167
+      InventoryUIDarkFantazy_62: -33205071
+      InventoryUIDarkFantazy_63: 28721197
+      InventoryUIDarkFantazy_64: -1639150543
+      InventoryUIDarkFantazy_65: -1047822147
+      InventoryUIDarkFantazy_66: 1069571639
+      InventoryUIDarkFantazy_67: 1987751561
+      InventoryUIDarkFantazy_68: 1170492697
+      InventoryUIDarkFantazy_69: 1490584322
+      InventoryUIDarkFantazy_7: -103679624
+      InventoryUIDarkFantazy_70: 739628134
+      InventoryUIDarkFantazy_71: 934942115
+      InventoryUIDarkFantazy_72: -918558710
+      InventoryUIDarkFantazy_73: -249388931
+      InventoryUIDarkFantazy_74: -2016088583
+      InventoryUIDarkFantazy_75: -2121006021
+      InventoryUIDarkFantazy_76: -750205601
+      InventoryUIDarkFantazy_77: 584417183
+      InventoryUIDarkFantazy_78: -1814123291
+      InventoryUIDarkFantazy_79: -1440008519
+      InventoryUIDarkFantazy_8: 834910709
+      InventoryUIDarkFantazy_80: 1902560198
+      InventoryUIDarkFantazy_81: 1046858808
+      InventoryUIDarkFantazy_82: -1078325865
+      InventoryUIDarkFantazy_83: 489104826
+      InventoryUIDarkFantazy_84: 1079180159
+      InventoryUIDarkFantazy_85: -70076118
+      InventoryUIDarkFantazy_86: 1377148511
+      InventoryUIDarkFantazy_87: -1790876652
+      InventoryUIDarkFantazy_88: 1028357129
+      InventoryUIDarkFantazy_89: -863893789
+      InventoryUIDarkFantazy_9: 1167568901
+      InventoryUIDarkFantazy_90: -748055305
+      InventoryUIDarkFantazy_91: 138674646
+      InventoryUIDarkFantazy_92: 846283853
+      InventoryUIDarkFantazy_93: 80753929
+      InventoryUIDarkFantazy_94: -1018661288
+      InventoryUIDarkFantazy_95: 686654200
+      InventoryUIDarkFantazy_96: -449901493
+      InventoryUIDarkFantazy_97: 1683804862
+      InventoryUIDarkFantazy_98: -224280413
+      InventoryUIDarkFantazy_99: -1159298610
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

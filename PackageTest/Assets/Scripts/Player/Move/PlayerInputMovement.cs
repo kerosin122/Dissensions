@@ -8,6 +8,12 @@ namespace ScriptsPlayer
     {
         public UnityEvent OnMoving = new();
 
+        private PlayerMovement _playerMovement;
+
+        private void OnValidate() => _playerMovement = GetComponent<PlayerMovement>();
+
+        private void Start() => _playerMovement ??= GetComponent<PlayerMovement>();
+
         private void Update() => InputMovement();
 
         private void InputMovement()
@@ -19,6 +25,14 @@ namespace ScriptsPlayer
 
                 OnMoving?.Invoke();
             }
+
+            else if (Input.GetMouseButtonDown(1))
+            {
+                if (EventSystem.current.IsPointerOverGameObject())
+                    return;
+
+                _playerMovement.IsMoving = false;
+            }
         }
-    }   
+    }
 }

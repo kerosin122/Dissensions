@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 58708554599140864}
   - component: {fileID: 3345694602208434413}
   - component: {fileID: -3928626272502836261}
+  - component: {fileID: -7188310954584900322}
   m_Layer: 7
   m_Name: Cervelat
   m_TagString: Untagged
@@ -145,3 +146,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _amount: 0
   _item: {fileID: 11400000, guid: 8ad030ae99edad54fa93357edf9df851, type: 2}
+--- !u!50 &-7188310954584900322
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127584152201004031}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 2

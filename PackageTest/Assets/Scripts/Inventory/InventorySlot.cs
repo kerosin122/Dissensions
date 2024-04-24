@@ -6,9 +6,23 @@ namespace ScriptsInventory
 {
     public class InventorySlot : MonoBehaviour
     {
-        public int Amount { get; set; }
-        public bool IsEmpty { get; set; }
-        public ItemScriptableObject Item { get; set; }
+        public int Amount
+        {
+            get { return _amount; }
+            set { _amount = value; }
+        }
+
+        public bool IsEmpty
+        {
+            get { return _isEmpty; }
+            set { _isEmpty = value; }
+        }
+
+        public ItemScriptableObject Item
+        {
+            get { return _item; }
+            set { _item = value; }
+        }
 
         public TextMeshProUGUI ItemAmountText
         {
@@ -16,22 +30,28 @@ namespace ScriptsInventory
             set { _itemAmountText = value; }
         }
 
+        public Image Icon
+        {
+            get { return _icon; }
+            set { _icon = value; }
+        }
+
         [SerializeField] int _amount;
-        [SerializeField] private GameObject _icon;
+        [SerializeField] private Image _icon;
         [SerializeField] private TextMeshProUGUI _itemAmountText;
         [SerializeField] ItemScriptableObject _item;
         [SerializeField] private bool _isEmpty = true;
 
         private void Awake()
         {
-            _icon = transform.GetChild(0).gameObject;
-            _itemAmountText = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
+            _icon = transform.GetChild(0).GetChild(0).GetComponent<Image>();
+            _itemAmountText = transform.GetChild(0).GetChild(1).GetComponent<TextMeshProUGUI>();
         }
 
         public void SetIcon(Sprite icon)
         {
-            _icon.GetComponent<Image>().color = new Color(1, 1, 1, 1);
-            _icon.GetComponent<Image>().sprite = icon;
+            _icon.color = new Color(0.5f, 0.5f, 0.5f, 1f);
+            _icon.sprite = icon;
         }
     }
 }

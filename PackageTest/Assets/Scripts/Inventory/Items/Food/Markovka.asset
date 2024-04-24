@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Markovka
   m_EditorClassIdentifier: 
   _nameItem: Markovka
+  _cost: 13
   _maximumAmount: 6
   _descriptionItem: Carrots from the garden
   _itemType: 1
   _prefabItem: {fileID: 4243594195879532693, guid: ebe56c81222890447881f0643f670713,
     type: 3}
   _icon: {fileID: 21300000, guid: 44ceee0fc7689cf4f8d6175ba9b65eee, type: 3}
-  _cost: 500
