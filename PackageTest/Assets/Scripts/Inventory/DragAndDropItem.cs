@@ -59,7 +59,7 @@ namespace ScriptsInventory
                 ExchangeSlotData(eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.GetComponent<InventorySlot>());
         }
 
-        private void NullifySlotData()
+        public void NullifySlotData()
         {
             _inventorySlot.Item = null;
             _inventorySlot.Amount = 0;

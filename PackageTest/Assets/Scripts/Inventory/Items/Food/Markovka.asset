@@ -19,3 +19,7 @@ MonoBehaviour:
   _prefabItem: {fileID: 4243594195879532693, guid: ebe56c81222890447881f0643f670713,
     type: 3}
   _icon: {fileID: 21300000, guid: 44ceee0fc7689cf4f8d6175ba9b65eee, type: 3}
+  _isConsumable: 1
+  _changeHealth: 0
+  _changeHunger: 0
+  _changeWater: 0
