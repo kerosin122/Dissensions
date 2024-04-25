@@ -6,35 +6,15 @@ namespace ScriptsInventory
 {
     public class InventorySlot : MonoBehaviour
     {
-        public int Amount
-        {
-            get { return _amount; }
-            set { _amount = value; }
-        }
+        public int Amount { get => _amount; set => _amount = value; }
 
-        public bool IsEmpty
-        {
-            get { return _isEmpty; }
-            set { _isEmpty = value; }
-        }
+        public bool IsEmpty { get => _isEmpty; set => _isEmpty = value; }
 
-        public ItemScriptableObject Item
-        {
-            get { return _item; }
-            set { _item = value; }
-        }
+        public ItemScriptableObject Item { get => _item; set => _item = value; }
 
-        public TextMeshProUGUI ItemAmountText
-        {
-            get { return _itemAmountText; }
-            set { _itemAmountText = value; }
-        }
+        public TextMeshProUGUI ItemAmountText { get => _itemAmountText; set => _itemAmountText = value; }
 
-        public Image Icon
-        {
-            get { return _icon; }
-            set { _icon = value; }
-        }
+        public Image Icon { get => _icon ; set => _icon = value; }
 
         [SerializeField] int _amount;
         [SerializeField] private Image _icon;

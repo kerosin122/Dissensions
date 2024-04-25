@@ -23,10 +23,10 @@ namespace ScriptsInventory
         [SerializeField] private ItemType _itemType;
         [SerializeField] private GameObject _prefabItem;
         [SerializeField] private Sprite _icon;
-        [SerializeField] private bool _isConsumable;
 
         [Header("FoodStats")]
 
+        [SerializeField] private bool _isConsumable;
         [SerializeField] private float _changeHealth;
         [SerializeField] private float _changeHunger;
         [SerializeField] private float _changeWater;

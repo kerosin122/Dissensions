@@ -1,9 +1,17 @@
+using TMPro;
+using ScriptsUI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneSwitcher : MonoBehaviour
 {
-    public void SwitchGame(int sceneIndex) => SceneManager.LoadScene(sceneIndex);
+    [SerializeField] private TextMeshProUGUI _playerData;
 
-    public void ExitGame()  => Application.Quit();
+    public void SwitchGame(int sceneIndex) 
+    {
+        PlayerData.PlayerName = _playerData;
+        SceneManager.LoadScene(sceneIndex);
+    }
+
+    public void ExitGame() => Application.Quit();
 }
