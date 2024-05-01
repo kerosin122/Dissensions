@@ -13,11 +13,12 @@ public abstract class Stats : MonoBehaviour
     [SerializeField] protected Accuracy _accuracy;          // точность
     [SerializeField] protected Evasion _evasion;            // уклонение
     [SerializeField] protected Initiative _initiative;      // инициатива
+    
     [Header("Secondary characteristics")]
     [SerializeField] protected float _health;               // здоровье
     [SerializeField] protected float _damage;               // урон
     [SerializeField] protected Mana _mana;                  // мана
-    [SerializeField] protected float _magicEffectiveness;   //эффективность магии
+    [SerializeField] protected float _magicEffectiveness;   // эффективность магии
 
     #region Getters and setters
     public Strenght Strenght { get { return _strenght; } set { _strenght = value; } }
