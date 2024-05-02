@@ -12,6 +12,8 @@ namespace ScriptsInventory
         public ItemType Type => _itemType;
         public GameObject PrefabItem => _prefabItem;
         public Sprite Icon => _icon;
+        public float ChangeHealth => _changeHealth;
+        public bool IsConsumable => _isConsumable;
 
         [SerializeField] private string _nameItem;
         [SerializeField] private float _cost;
@@ -20,5 +22,9 @@ namespace ScriptsInventory
         [SerializeField] private ItemType _itemType;
         [SerializeField] private GameObject _prefabItem;
         [SerializeField] private Sprite _icon;
+
+        [Header("FoodFunctions")]
+        [SerializeField] private float _changeHealth;
+        [SerializeField] private bool _isConsumable;
     }
 }   
