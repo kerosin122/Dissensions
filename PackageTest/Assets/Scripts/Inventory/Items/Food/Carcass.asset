@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: Carcass
   m_EditorClassIdentifier: 
   _nameItem: Carcass
-  _cost: 11
   _maximumAmount: 1
   _descriptionItem: Meat that can be found after killing an animal
   _itemType: 1

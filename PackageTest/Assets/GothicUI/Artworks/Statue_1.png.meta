@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:PackageTest/Assets/GothicUI/Artworks/Statue_1.png.meta
 guid: ee4783c645a126148b3f8ce74c9a7b11
-========
-guid: 0578884ea35b6f146812660014b858d1
->>>>>>>> origin/Dev_AED:PackageTest/Assets/GothicUI/Artworks/Bar_Button_long.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -38,11 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<<< HEAD:PackageTest/Assets/GothicUI/Artworks/Statue_1.png.meta
     filterMode: 1
-========
-    filterMode: 0
->>>>>>>> origin/Dev_AED:PackageTest/Assets/GothicUI/Artworks/Bar_Button_long.png.meta
     aniso: 0
     mipBias: 0
     wrapU: 1
@@ -107,11 +99,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-<<<<<<<< HEAD:PackageTest/Assets/GothicUI/Artworks/Statue_1.png.meta
     spriteID: 960b82710140f354baefe54ee01cbc85
-========
-    spriteID: d1d285580c5a36c47bac9384e442a217
->>>>>>>> origin/Dev_AED:PackageTest/Assets/GothicUI/Artworks/Bar_Button_long.png.meta
     internalID: 0
     vertices: []
     indices: 

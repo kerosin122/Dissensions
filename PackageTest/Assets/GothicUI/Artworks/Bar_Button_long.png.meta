@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:PackageTest/Assets/GothicUI/Artworks/Bar_Button_long.png.meta
 guid: 0578884ea35b6f146812660014b858d1
-========
-guid: 2cefa37eaa070124c9345dd7aaf3c2fc
->>>>>>>> origin/Dev_AED:PackageTest/Assets/GothicUI/Artworks/Bookmark_Blue.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -103,11 +99,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-<<<<<<<< HEAD:PackageTest/Assets/GothicUI/Artworks/Bar_Button_long.png.meta
     spriteID: d1d285580c5a36c47bac9384e442a217
-========
-    spriteID: d63b3763bc197004c9df5345c5d9766d
->>>>>>>> origin/Dev_AED:PackageTest/Assets/GothicUI/Artworks/Bookmark_Blue.png.meta
     internalID: 0
     vertices: []
     indices: 

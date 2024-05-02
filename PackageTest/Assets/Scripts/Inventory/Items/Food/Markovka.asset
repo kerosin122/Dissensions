@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: Markovka
   m_EditorClassIdentifier: 
   _nameItem: Markovka
-  _cost: 13
   _maximumAmount: 6
   _descriptionItem: Carrots from the garden
   _itemType: 1

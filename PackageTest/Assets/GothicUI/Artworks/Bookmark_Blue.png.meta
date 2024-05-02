@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:PackageTest/Assets/GothicUI/Artworks/Bookmark_Blue.png.meta
 guid: 2cefa37eaa070124c9345dd7aaf3c2fc
-========
-guid: 5f131f234764f3d4e9c4da2943f43edf
->>>>>>>> origin/Dev_AED:PackageTest/Assets/GothicUI/Artworks/Bookmark_Green.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -103,11 +99,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-<<<<<<<< HEAD:PackageTest/Assets/GothicUI/Artworks/Bookmark_Blue.png.meta
     spriteID: d63b3763bc197004c9df5345c5d9766d
-========
-    spriteID: d37a2ba4055febe46976a4d5266b1a51
->>>>>>>> origin/Dev_AED:PackageTest/Assets/GothicUI/Artworks/Bookmark_Green.png.meta
     internalID: 0
     vertices: []
     indices: 

@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: Meat 1
   m_EditorClassIdentifier: 
   _nameItem: Meat
-  _cost: 120
   _maximumAmount: 3
   _descriptionItem: Meat that can be bought at the market
   _itemType: 1
