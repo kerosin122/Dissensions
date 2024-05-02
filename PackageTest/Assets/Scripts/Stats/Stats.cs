@@ -4,72 +4,72 @@ using UnityEngine;
 public abstract class Stats : MonoBehaviour
 {
     [Header("Main characteristics")]
-    [SerializeField] protected Strenght _strenght;          // сила
-    [SerializeField] protected Dexterity _dexterity;        // ловкость
-    [SerializeField] protected Durability _durability;      // выносливость
-    [SerializeField] protected Intelligence _intelligence;  // интеллект
-    [SerializeField] protected Speed _speed;                // скорость
-    [SerializeField] protected Agility _agility;            // проворство
-    [SerializeField] protected Accuracy _accuracy;          // точность
-    [SerializeField] protected Evasion _evasion;            // уклонение
-    [SerializeField] protected Initiative _initiative;      // инициатива
+    [SerializeField] protected Strenght Strenght;          // сила
+    [SerializeField] protected Dexterity Dexterity;        // ловкость
+    [SerializeField] protected Durability Durability;      // выносливость
+    [SerializeField] protected Intelligence Intelligence;  // интеллект
+    [SerializeField] protected Speed Speed;                // скорость
+    [SerializeField] protected Agility Agility;            // проворство
+    [SerializeField] protected Accuracy Accuracy;          // точность
+    [SerializeField] protected Evasion Evasion;            // уклонение
+    [SerializeField] protected Initiative Initiative;      // инициатива
     
     [Header("Secondary characteristics")]
-    [SerializeField] protected float _health;               // здоровье
-    [SerializeField] protected float _damage;               // урон
-    [SerializeField] protected Mana _mana;                  // мана
-    [SerializeField] protected float _magicEffectiveness;   // эффективность магии
+    [SerializeField] protected float Health;               // здоровье
+    [SerializeField] protected float Damage;               // урон
+    [SerializeField] protected Mana Mana;                  // мана
+    [SerializeField] protected float MagicEffectiveness;   // эффективность магии
 
     #region Getters and setters
-    public Strenght Strenght { get { return _strenght; } set { _strenght = value; } }
-    public Dexterity Dexterity { get { return _dexterity; } set { _dexterity = value; } }
-    public Durability Durability { get { return _durability; } set { _durability = value; } }
-    public Intelligence Intelligence { get { return _intelligence; } set { _intelligence = value; } }
-    public Speed Speed { get { return _speed; } set { _speed = value; } }
-    public Agility Agility { get { return _agility; } set { _agility = value; } }
-    public Accuracy Accuracy { get { return _accuracy; } set { _accuracy = value; } }
-    public Evasion Evasion { get { return _evasion; } set { _evasion = value; } }
-    public Initiative Initiative { get { return _initiative; } set { _initiative = value; } }
-    public float Health { get { return _health; } set { _health = value; } }
-    public float Damage { get { return _damage; } set { _damage = value; } }
-    public Mana Mana { get { return _mana; } set { _mana = value; } }
-    public float MagicEffectiveness { get { return _magicEffectiveness; } set { _magicEffectiveness = value; } }
+    public Strenght StrenghtGS { get { return Strenght; } set { Strenght = value; } }
+    public Dexterity DexterityGS { get { return Dexterity; } set { Dexterity = value; } }
+    public Durability DurabilityGS { get { return Durability; } set { Durability = value; } }
+    public Intelligence IntelligenceGS { get { return Intelligence; } set { Intelligence = value; } }
+    public Speed SpeedGS { get { return Speed; } set { Speed = value; } }
+    public Agility AgilityGS { get { return Agility; } set { Agility = value; } }
+    public Accuracy AccuracyGS { get { return Accuracy; } set { Accuracy = value; } }
+    public Evasion EvasionGS { get { return Evasion; } set { Evasion = value; } }
+    public Initiative InitiativeGS { get { return Initiative; } set { Initiative = value; } }
+    public float HealthGS { get { return Health; } set { Health = value; } }
+    public float DamageGS { get { return Damage; } set { Damage = value; } }
+    public Mana ManaGS { get { return Mana; } set { Mana = value; } }
+    public float MagicEffectivenessGS { get { return MagicEffectiveness; } set { MagicEffectiveness = value; } }
     #endregion
 
     public virtual void AddStrenghtPoint(int count)
     {
-        Strenght._strenght += count;
-        Health += Strenght._healthScale * count;
-        Damage += Strenght._damageScale * count;
+        StrenghtGS._strenght += count;
+        HealthGS += StrenghtGS._healthScale * count;
+        DamageGS += StrenghtGS._damageScale * count;
     }
     public virtual void AddDexterityPoint(int count)
     {
-        Dexterity._dexterity += count;
-        Damage += Dexterity._damageScale * count;
-        Evasion._evasion += Dexterity._evasionScale * count;
+        DexterityGS._dexterity += count;
+        DamageGS += DexterityGS._damageScale * count;
+        EvasionGS._evasion += DexterityGS._evasionScale * count;
     }
     public virtual void AddDurabilityPoint(int count)
     {
-        Durability._durability += count;
-        Health += Durability._healthScale * count;
-        Accuracy._accuracy += Durability._accuraceScale * count;
+        DurabilityGS._durability += count;
+        HealthGS += DurabilityGS._healthScale * count;
+        AccuracyGS._accuracy += DurabilityGS._accuraceScale * count;
     }
     public virtual void AddIntelligencePoint(int count)
     {
-        Intelligence._intelligence += count;
-        Mana._mana += Intelligence._manaScale * count;
-        MagicEffectiveness += Intelligence._magicEffectivenessScale * count;
+        IntelligenceGS._intelligence += count;
+        ManaGS._mana += IntelligenceGS._manaScale * count;
+        MagicEffectivenessGS += IntelligenceGS._magicEffectivenessScale * count;
     }
     public virtual void AddSpeedPoint(int count)
     {
-        Speed._speed += count;
-        Evasion._evasion += Speed._evasionScale * count;
-        Initiative._initiative += Speed._initiativeScale * count;
+        SpeedGS._speed += count;
+        EvasionGS._evasion += SpeedGS._evasionScale * count;
+        InitiativeGS._initiative += SpeedGS._initiativeScale * count;
     }
     public virtual void AddAgilityPoiny(int count)
     {
-        Agility._agility += count;
-        Accuracy._accuracy += Agility._accuracyScale * count;
-        Initiative._initiative += Agility._initiativeScale * count;
+        AgilityGS._agility += count;
+        AccuracyGS._accuracy += AgilityGS._accuracyScale * count;
+        InitiativeGS._initiative += AgilityGS._initiativeScale * count;
     }
 }
