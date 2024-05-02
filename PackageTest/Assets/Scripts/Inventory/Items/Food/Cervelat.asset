@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Cervelat
   m_EditorClassIdentifier: 
   _nameItem: Cervelat
+  _cost: 12
   _maximumAmount: 2
   _descriptionItem: The best meat you can find
   _itemType: 1
