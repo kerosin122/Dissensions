@@ -70,3 +70,9 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+PackageTest/Assets/Sounds/MasterMixer.mixer
+PackageTest/Assets/Sounds/melobytes.mp3.meta
+PackageTest/Assets/Sounds/New Composition \#1.mp3.meta
+PackageTest/Assets/Sounds/New Composition \#2.mp3
+PackageTest/Assets/Sounds/New Composition \#2.mp3.meta
+PackageTest/Assets/Sounds/New Composition \#7.mp3.meta

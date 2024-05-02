@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1f20fd650df9d4fabea83282c96fda, type: 3}
+  m_Name: Markovka
+  m_EditorClassIdentifier: 
+  _nameItem: Markovka
+  _maximumAmount: 6
+  _descriptionItem: Carrots from the garden
+  _itemType: 1
+  _prefabItem: {fileID: 4243594195879532693, guid: ebe56c81222890447881f0643f670713,
+    type: 3}
+  _icon: {fileID: 21300000, guid: 44ceee0fc7689cf4f8d6175ba9b65eee, type: 3}
+  _isConsumable: 1
+  _changeHealth: 0
+  _changeHunger: 0
+  _changeWater: 0
