@@ -8,12 +8,8 @@ namespace ScriptsScene
 {
     public class SceneSwitcher : MonoBehaviour
     {
-        private const string ACTIVE_PANEL = "ActivePanel";
-
         [SerializeField] private Image _loadBarImage;
         [SerializeField] private TextMeshProUGUI _loadBarText;
-
-        [SerializeField] private Animator _loadBarAnimator;
 
         [SerializeField] private int _sceneID;
 
@@ -35,9 +31,6 @@ namespace ScriptsScene
                 _loadBarText.text = "Loading " + string.Format("{0:0}%", progress * 100f);
 
                 yield return 0;
-
-                if (_asyncOperation.isDone)
-                    _loadBarAnimator.SetTrigger(ACTIVE_PANEL);
             }
         }
 
