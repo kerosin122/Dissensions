@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class WorldTime : MonoBehaviour
 {
+    public static WorldTime instance;
     public TextMeshProUGUI timerText;
 
     private bool _worldTimerActive = true;
@@ -15,7 +16,14 @@ public class WorldTime : MonoBehaviour
 
     private void Start()
     {
-        
+        if(instance == null)
+        {
+            instance = new WorldTime();
+        }
+        else
+        {
+            Destroy(this);
+        }
     }
 
     private IEnumerator WorldTimer()
