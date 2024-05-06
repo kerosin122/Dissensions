@@ -7,13 +7,14 @@ namespace ScriptsSaving
     public class SaveData : MonoBehaviour
     {
         public static SaveData Instance { get; private set; }
+
         public int CurrentCharacterID => _currentCharacterID;
 
         [SerializeField] private int _currentCharacterID;
 
         private void Awake()
         {
-            if (Instance != null&& Instance != this)
+            if (Instance != null && Instance != this)
                 Destroy(gameObject);
 
             else
