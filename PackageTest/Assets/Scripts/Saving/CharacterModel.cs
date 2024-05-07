@@ -10,7 +10,7 @@ namespace ScriptsSaving
 
         private void ChooseCharacterModel(int index)
         {
-            Instantiate(_charactersModel[index], transform.position, Quaternion.identity, transform);
+            Instantiate(_charactersModel[index], new Vector2(37.67f, 51.15f), Quaternion.identity, transform);
         }
     }
 }

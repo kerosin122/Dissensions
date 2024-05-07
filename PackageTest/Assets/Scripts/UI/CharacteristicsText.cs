@@ -7,12 +7,6 @@ namespace ScriptCharacteristics
     {
         [SerializeField] private TextMeshProUGUI _goldText;
 
-        public void Initialize(float gold)
-        {
-            if (_goldText == null)
-                return;
-
-            _goldText.text = $"Gold: {gold}$";
-        }
+        public void Initialize(float gold) => _goldText.text = $"Gold: {gold}$";
     }
 }

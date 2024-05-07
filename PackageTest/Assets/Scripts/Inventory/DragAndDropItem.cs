@@ -15,7 +15,8 @@ namespace ScriptsInventory
 
         public void OnDrag(PointerEventData eventData)
         {
-            CheckGameObjectIsEmpty();
+            if (_inventorySlot.IsEmpty)
+                return;
 
             GetComponent<RectTransform>().position += new Vector3(eventData.delta.x, eventData.delta.y);
         }
@@ -111,12 +112,6 @@ namespace ScriptsInventory
             }
 
             _inventorySlot.IsEmpty = isEmpty;
-        }
-
-        private void CheckGameObjectIsEmpty()
-        {
-            if (_inventorySlot.IsEmpty)
-                return;
         }
 
         private void ChangeColorAndRecastTarget(float transparency, bool isActive)

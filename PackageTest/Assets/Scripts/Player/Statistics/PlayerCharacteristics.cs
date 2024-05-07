@@ -8,6 +8,10 @@ namespace ScriptCharacteristics
 
         [SerializeField] private CharacteristicsText _characteristicsText;
 
-        private void Update() => _characteristicsText.Initialize(_gold);
+        private void Update()
+        {
+            if (_characteristicsText != null)
+                _characteristicsText.Initialize(_gold);
+        }
     }
 }

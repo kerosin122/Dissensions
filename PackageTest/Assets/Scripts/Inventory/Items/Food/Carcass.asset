@@ -15,11 +15,8 @@ MonoBehaviour:
   _nameItem: Carcass
   _maximumAmount: 1
   _descriptionItem: Meat that can be found after killing an animal
-  _itemType: 1
+  _itemType: 0
   _prefabItem: {fileID: 2387976450639571735, guid: 669888d381bde684c91756f662c2909e,
     type: 3}
   _icon: {fileID: 21300000, guid: 53e13b56ddaa3b7408965c2ec1b59d01, type: 3}
-  _isConsumable: 1
-  _changeHealth: 0
-  _changeHunger: 0
-  _changeWater: 0
+  _changeFoodHealth: 0

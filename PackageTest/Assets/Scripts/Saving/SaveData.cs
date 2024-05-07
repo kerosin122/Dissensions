@@ -8,7 +8,7 @@ namespace ScriptsSaving
     {
         public static SaveData Instance { get; private set; }
 
-        public int CurrentCharacterID => _currentCharacterID;
+        public int CurrentCharacterID => _currentCharacterID;   
 
         [SerializeField] private int _currentCharacterID;
 

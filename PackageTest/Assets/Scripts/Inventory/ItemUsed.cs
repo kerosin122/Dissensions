@@ -27,7 +27,7 @@ namespace ScriptsInventory
             {
                 if (_quickSlotParent.GetChild(_quickPanel.CurrentQuickSlotID).GetComponent<InventorySlot>().Item != null)
                 {
-                    if (_quickSlotParent.GetChild(_quickPanel.CurrentQuickSlotID).GetComponent<InventorySlot>().Item.IsConsumable && _quickSlotParent.GetChild(_quickPanel.CurrentQuickSlotID).GetComponent<Image>().sprite == _quickPanel.ActivatedQuickSlot)
+                    if (_quickSlotParent.GetChild(_quickPanel.CurrentQuickSlotID).GetComponent<InventorySlot>().Item.Type == ItemType.Food && _quickSlotParent.GetChild(_quickPanel.CurrentQuickSlotID).GetComponent<Image>().sprite == _quickPanel.ActivatedQuickSlot)
                     {
                         _changeCharacteristics.ChangeHealthValue();
 
