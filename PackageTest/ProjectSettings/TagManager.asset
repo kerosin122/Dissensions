@@ -6,6 +6,7 @@ TagManager:
   tags:
   - BackgroundInventoryPanel
   - ClearSlotIneventory
+  - ClearSlotInventory
   layers:
   - Default
   - TransparentFX
