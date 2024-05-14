@@ -42,30 +42,35 @@ public abstract class Stats : MonoBehaviour
         HealthGS.health += StrenghtGS.healthScale * count;
         DamageGS += StrenghtGS.damageScale * count;
     }
+
     public virtual void AddDexterityPoint(int count)
     {
         DexterityGS.dexterity += count;
         DamageGS += DexterityGS.damageScale * count;
         EvasionGS.evasion += DexterityGS.evasionScale * count;
     }
+
     public virtual void AddDurabilityPoint(int count)
     {
         DurabilityGS.durability += count;
         HealthGS.health += DurabilityGS.healthScale * count;
         AccuracyGS.accuracy += DurabilityGS.accuraceScale * count;
     }
+
     public virtual void AddIntelligencePoint(int count)
     {
         IntelligenceGS.intelligence += count;
         ManaGS.mana += IntelligenceGS.manaScale * count;
         MagicEffectivenessGS += IntelligenceGS.magicEffectivenessScale * count;
     }
+
     public virtual void AddSpeedPoint(int count)
     {
         SpeedGS.speed += count;
         EvasionGS.evasion += SpeedGS.evasionScale * count;
         InitiativeGS.initiative += SpeedGS.initiativeScale * count;
     }
+
     public virtual void AddAgilityPoiny(int count)
     {
         AgilityGS.agility += count;
