@@ -2,44 +2,70 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 
-[System.Serializable]
-public class WorldTime : MonoBehaviour
+namespace TimeMain.WorldTime
 {
-    public static WorldTime instance;
-    public TextMeshProUGUI timerText;
-
-    private bool _worldTimerActive = true;
-
-    [SerializeField] private int _hours;
-    [SerializeField] private int _minets;
-    [SerializeField] private float _timeScaleToRealTime = 1f;
-
-    private void Start()
+    [System.Serializable]
+    public class WorldTime : MonoBehaviour
     {
-        if(instance == null)
-        {
-            instance = new WorldTime();
-        }
-        else
-        {
-            Destroy(this);
-        }
-    }
+        public static WorldTime Instance;
+        public TextMeshProUGUI timerText;
 
-    private IEnumerator WorldTimer()
-    {
-        while (_worldTimerActive)
+        private bool _worldTimerActive = true;
+
+        [SerializeField] private Time _time = new Time();
+        [SerializeField] private int _day = 0;
+
+        public Time TimeGS { get => _time; set { _time = value; } }
+        public int DayG { get => _day; }
+
+        private void Start()
         {
-            yield return new WaitForSeconds(_timeScaleToRealTime);
-            _minets += 1;
-            if (_minets >= 60)
+            if (Instance == null)
             {
-                _hours += 1;
-                _minets = 0;
-                if(_hours >= 24)
+                Instance = new WorldTime();
+            }
+            else
+            {
+                Destroy(this);
+            }
+            StartCoroutine(WorldTimer());
+        }
+        private IEnumerator WorldTimer()
+        {
+            while (_worldTimerActive)
+            {
+                TimeUpdate();
+                yield return new WaitForSeconds(_time.timeScaleToRealTime);
+                _time.minets += 1;
+                if (_time.minets >= 60)
                 {
-                    _hours = 0;
+                    _time.hours += 1;
+                    _time.minets = 0;
+                    if (_time.hours >= 24)
+                    {
+                        _time.hours = 0;
+                        _day += 1;
+                    }
                 }
+            }
+        }
+        private void TimeUpdate()
+        {
+            if (_time.hours < 10 && _time.minets < 10)
+            {
+                timerText.text = $"0{_time.hours}:0{_time.minets}";
+            }
+            else if (_time.hours >= 10 && _time.minets < 10)
+            {
+                timerText.text = $"{_time.hours}:0{_time.minets}";
+            }
+            else if (_time.hours < 10 && _time.minets >= 10)
+            {
+                timerText.text = $"0{_time.hours}:{_time.minets}";
+            }
+            else
+            {
+                timerText.text = $"{_time.hours}:{_time.minets}";
             }
         }
     }
