@@ -14,13 +14,13 @@ namespace ScriptsUI
             CheckingForNull();
             
             _panel.SetActive(true);
-           StartCoroutine(AnimatePanel(true));
+            StartCoroutine(AnimatePanel(true));
         }
 
         public void HidePanel()
         {
             CheckingForNull();
-           StartCoroutine(AnimatePanel(false));
+            StartCoroutine(AnimatePanel(false));
         }
 
         private IEnumerator AnimatePanel(bool isOpening)
